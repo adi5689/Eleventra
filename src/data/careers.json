@@ -1,0 +1,2256 @@
+[
+  {
+    "id": "data-science",
+    "name": "Data Science",
+    "badge": "D",
+    "tone": "h0",
+    "icon": "bars",
+    "group": "Trending now",
+    "description": "Finding patterns in data to help organisations make better decisions.",
+    "duties": [
+      "Clean and prepare large data sets",
+      "Build models that predict or classify outcomes",
+      "Explain findings to teams who are not technical"
+    ],
+    "skills": [
+      "Statistics",
+      "Python or R",
+      "SQL",
+      "Machine learning",
+      "Data storytelling"
+    ],
+    "education": [
+      "Bachelor's in computer science, statistics, maths or engineering",
+      "Short courses or a master's in data science or analytics",
+      "Build a portfolio of real data projects"
+    ],
+    "related": [
+      "artificial-intelligence",
+      "financial-analysis",
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "software-engineering",
+    "name": "Software Engineering",
+    "badge": "D",
+    "tone": "h7",
+    "icon": "chip",
+    "group": "Trending now",
+    "description": "Designing, building and maintaining the software that products and businesses run on.",
+    "duties": [
+      "Write and review code",
+      "Design systems and fix bugs",
+      "Work with product and design teams to ship features"
+    ],
+    "skills": [
+      "Programming",
+      "Data structures",
+      "System design",
+      "Version control",
+      "Problem solving"
+    ],
+    "education": [
+      "B.Tech or B.E. in computer science or IT, or BCA followed by MCA",
+      "Practise coding through projects and internships",
+      "Apply through campus placements, off-campus hiring or open-source work"
+    ],
+    "related": [
+      "full-stack-development",
+      "devops",
+      "mobile-application-development"
+    ]
+  },
+  {
+    "id": "product-management",
+    "name": "Product Management",
+    "badge": "H",
+    "tone": "h2",
+    "icon": "target",
+    "group": "Trending now",
+    "description": "Deciding what a product should do, and guiding teams to build it.",
+    "duties": [
+      "Study user needs and market gaps",
+      "Prioritise features and set the roadmap",
+      "Coordinate engineering, design and marketing"
+    ],
+    "skills": [
+      "User research",
+      "Prioritisation",
+      "Communication",
+      "Data analysis",
+      "Stakeholder management"
+    ],
+    "education": [
+      "Any degree, often engineering or business",
+      "Start in engineering, design, analytics or marketing, or take an MBA",
+      "Product courses and side projects help you move into the role"
+    ],
+    "related": [
+      "software-engineering",
+      "user-experience-design-ux",
+      "business-management"
+    ]
+  },
+  {
+    "id": "digital-marketing",
+    "name": "Digital Marketing",
+    "badge": "D",
+    "tone": "h9",
+    "icon": "trend",
+    "group": "Trending now",
+    "description": "Reaching and winning customers through search, social media, email and online ads.",
+    "duties": [
+      "Plan and run online campaigns",
+      "Track clicks, leads and sales",
+      "Improve content and ads using the results"
+    ],
+    "skills": [
+      "SEO and SEM",
+      "Analytics",
+      "Copywriting",
+      "Social platforms",
+      "Budgeting"
+    ],
+    "education": [
+      "Any bachelor's degree, often BBA, BMS or mass communication",
+      "Certifications from Google, Meta or HubSpot",
+      "Internships and managing real campaigns"
+    ],
+    "related": [
+      "growth-marketing",
+      "performance-marketing",
+      "social-media-management"
+    ]
+  },
+  {
+    "id": "user-experience-design-ux",
+    "name": "User Experience Design UX",
+    "badge": "N",
+    "tone": "h4",
+    "icon": "bolt",
+    "group": "Trending now",
+    "description": "Making digital products easy and pleasant to use.",
+    "duties": [
+      "Interview users and map their journeys",
+      "Sketch flows and build prototypes",
+      "Test designs and refine them"
+    ],
+    "skills": [
+      "User research",
+      "Wireframing",
+      "Prototyping",
+      "Empathy",
+      "Usability testing"
+    ],
+    "education": [
+      "Bachelor's in design, psychology, computer science or any stream",
+      "Design degrees or specialised UX courses",
+      "A portfolio of case studies matters more than the degree"
+    ],
+    "related": ["user-interface-design", "product-design", "product-management"]
+  },
+  {
+    "id": "civil-services",
+    "name": "Civil Services",
+    "badge": "",
+    "tone": "h11",
+    "icon": "building",
+    "group": "Trending now",
+    "description": "Serving in the administration of the country through government services.",
+    "duties": [
+      "Carry out government policy at district and state level",
+      "Manage public programmes and budgets",
+      "Maintain law and order or represent the country abroad, depending on the service"
+    ],
+    "skills": [
+      "Analytical thinking",
+      "Writing",
+      "General knowledge",
+      "Leadership",
+      "Integrity"
+    ],
+    "education": [
+      "Any bachelor's degree",
+      "UPSC Civil Services Examination: prelims, mains and interview",
+      "Many candidates prepare for a few years, so keep a backup plan"
+    ],
+    "related": ["law", "economics", "public-relations"]
+  },
+  {
+    "id": "investment-banking",
+    "name": "Investment Banking",
+    "badge": "H",
+    "tone": "h6",
+    "icon": "briefcase",
+    "group": "Trending now",
+    "description": "Helping companies raise money and handle mergers, acquisitions and listings.",
+    "duties": [
+      "Build financial models and valuations",
+      "Prepare pitch decks and deal documents",
+      "Work with clients through the life of a deal"
+    ],
+    "skills": [
+      "Financial modelling",
+      "Valuation",
+      "Excel",
+      "Communication",
+      "Stamina"
+    ],
+    "education": [
+      "Bachelor's in commerce, finance, economics or engineering",
+      "An MBA in finance, CFA or CA strengthens your profile",
+      "Internships at banks, boutique firms or finance teams"
+    ],
+    "related": [
+      "financial-analysis",
+      "chartered-accountancy",
+      "risk-management"
+    ]
+  },
+  {
+    "id": "medicine",
+    "name": "Medicine",
+    "badge": "D",
+    "tone": "h1",
+    "icon": "users",
+    "group": "Trending now",
+    "description": "Diagnosing and treating illness as a doctor.",
+    "duties": [
+      "Examine patients and diagnose conditions",
+      "Prescribe treatment and follow up",
+      "Specialise in an area such as surgery or paediatrics"
+    ],
+    "skills": [
+      "Biology",
+      "Empathy",
+      "Decisions under pressure",
+      "Communication",
+      "Long-term study"
+    ],
+    "education": [
+      "Class 12 with physics, chemistry and biology",
+      "NEET-UG for MBBS, about five and a half years including internship",
+      "NEET-PG for specialisation"
+    ],
+    "related": ["clinical-research", "biomedical-engineering", "psychology"]
+  },
+  {
+    "id": "law",
+    "name": "Law",
+    "badge": "",
+    "tone": "h8",
+    "icon": "briefcase",
+    "group": "Trending now",
+    "description": "Advising and representing people and organisations on legal matters.",
+    "duties": [
+      "Research laws and past judgments",
+      "Draft contracts, petitions and opinions",
+      "Argue cases in court or negotiate settlements"
+    ],
+    "skills": [
+      "Reading and writing",
+      "Argument",
+      "Research",
+      "Attention to detail",
+      "Ethics"
+    ],
+    "education": [
+      "Five-year integrated BA LLB through CLAT, AILET or similar exams, or LLB after graduation",
+      "Enrol with the Bar Council",
+      "Practise in court, at a law firm or in-house"
+    ],
+    "related": [
+      "civil-services",
+      "company-secretaryship",
+      "corporate-communication"
+    ]
+  },
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "badge": "",
+    "tone": "h3",
+    "icon": "building",
+    "group": "Trending now",
+    "description": "Designing buildings and spaces that are safe, usable and well made.",
+    "duties": [
+      "Draw plans and 3D models",
+      "Coordinate with engineers and contractors",
+      "Get approvals and oversee construction"
+    ],
+    "skills": [
+      "Drawing",
+      "3D software",
+      "Spatial thinking",
+      "Creativity",
+      "Building codes"
+    ],
+    "education": [
+      "Five-year B.Arch after Class 12 through NATA or JEE Main Paper 2",
+      "Register with the Council of Architecture",
+      "Intern at a firm, then a master's if you want to specialise"
+    ],
+    "related": ["interior-design", "industrial-design", "sustainability"]
+  },
+  {
+    "id": "aviation",
+    "name": "Aviation",
+    "badge": "D",
+    "tone": "h10",
+    "icon": "globe",
+    "group": "Trending now",
+    "description": "Working in the airline and airport industry, in the air or on the ground.",
+    "duties": [
+      "Fly aircraft as a pilot, or inspect and maintain them as an engineer",
+      "Manage flights, ground operations and safety",
+      "Serve passengers as cabin crew"
+    ],
+    "skills": [
+      "Technical aptitude",
+      "Discipline",
+      "Communication",
+      "Teamwork",
+      "Medical fitness"
+    ],
+    "education": [
+      "Pilot: Class 12 with physics and maths, then a DGCA-approved commercial pilot licence",
+      "Engineer: aircraft maintenance engineering licence",
+      "Cabin crew and ground roles: Class 12 or graduation plus airline training"
+    ],
+    "related": [
+      "operations-management",
+      "robotics-engineering",
+      "drone-technology"
+    ]
+  },
+  {
+    "id": "culinary-arts",
+    "name": "Culinary Arts",
+    "badge": "",
+    "tone": "h5",
+    "icon": "layers",
+    "group": "Trending now",
+    "description": "Creating, cooking and presenting food professionally.",
+    "duties": [
+      "Plan menus and prepare dishes",
+      "Run a kitchen team and control costs",
+      "Maintain food safety and hygiene"
+    ],
+    "skills": [
+      "Cooking technique",
+      "Creativity",
+      "Time management",
+      "Teamwork",
+      "Food safety"
+    ],
+    "education": [
+      "Diploma or bachelor's in culinary arts or hotel management",
+      "Training in hotel or restaurant kitchens",
+      "Grow into head chef, caterer or restaurant owner"
+    ],
+    "related": [
+      "nutrition-and-dietetics",
+      "entrepreneurship",
+      "event-management"
+    ]
+  },
+  {
+    "id": "psychology",
+    "name": "Psychology",
+    "badge": "D",
+    "tone": "h0",
+    "icon": "users",
+    "group": "Trending now",
+    "description": "Understanding how people think, feel and behave, and helping them.",
+    "duties": [
+      "Assess and counsel clients",
+      "Run research or tests",
+      "Work in schools, clinics, companies or communities"
+    ],
+    "skills": [
+      "Listening",
+      "Empathy",
+      "Research methods",
+      "Observation",
+      "Ethics"
+    ],
+    "education": [
+      "BA or BSc in psychology",
+      "MA or MSc, and an RCI-approved M.Phil in clinical psychology to practise clinically",
+      "Supervised experience before independent work"
+    ],
+    "related": ["human-resource-management", "medicine", "clinical-research"]
+  },
+  {
+    "id": "cyber-security",
+    "name": "Cyber Security",
+    "badge": "D",
+    "tone": "h7",
+    "icon": "bolt",
+    "group": "Trending now",
+    "description": "Protecting systems, networks and data from attacks.",
+    "duties": [
+      "Monitor networks for threats",
+      "Test systems for weaknesses",
+      "Respond to and investigate incidents"
+    ],
+    "skills": [
+      "Networking",
+      "Operating systems",
+      "Scripting",
+      "Risk thinking",
+      "Curiosity"
+    ],
+    "education": [
+      "B.Tech or BSc in computer science or IT",
+      "Certifications such as Security+, CEH or CISSP as you advance",
+      "Practise on labs and capture-the-flag challenges"
+    ],
+    "related": ["ethical-hacking", "cloud-computing", "hardware-and-networking"]
+  },
+  {
+    "id": "artificial-intelligence",
+    "name": "Artificial Intelligence",
+    "badge": "H",
+    "tone": "h2",
+    "icon": "chip",
+    "group": "Trending now",
+    "description": "Building systems that learn, reason and make decisions.",
+    "duties": [
+      "Train and test machine learning models",
+      "Prepare data and put models into products",
+      "Study new methods and tools"
+    ],
+    "skills": [
+      "Maths and statistics",
+      "Python",
+      "Machine learning",
+      "Data handling",
+      "Research mindset"
+    ],
+    "education": [
+      "B.Tech in computer science, AI or data science, or a degree in maths or statistics",
+      "A master's or PhD for research roles",
+      "Projects, competitions and internships"
+    ],
+    "related": ["data-science", "robotics-engineering", "software-engineering"]
+  },
+  {
+    "id": "blockchain-technology",
+    "name": "Blockchain Technology",
+    "badge": "N",
+    "tone": "h9",
+    "icon": "layers",
+    "group": "Trending now",
+    "description": "Building secure, shared digital records and applications on distributed networks.",
+    "duties": [
+      "Develop smart contracts and applications",
+      "Design secure transaction systems",
+      "Advise businesses on where blockchain fits"
+    ],
+    "skills": [
+      "Programming",
+      "Cryptography basics",
+      "Distributed systems",
+      "Security thinking",
+      "Finance basics"
+    ],
+    "education": [
+      "B.Tech in computer science or IT",
+      "Self-study and certifications in blockchain development",
+      "Build and publish small projects"
+    ],
+    "related": [
+      "cyber-security",
+      "software-engineering",
+      "full-stack-development"
+    ]
+  },
+  {
+    "id": "cloud-computing",
+    "name": "Cloud Computing",
+    "badge": "D",
+    "tone": "h4",
+    "icon": "globe",
+    "group": "Trending now",
+    "description": "Running software and data on remote servers instead of local machines.",
+    "duties": [
+      "Design cloud setups for applications",
+      "Manage cost, security and performance",
+      "Move existing systems to the cloud"
+    ],
+    "skills": [
+      "Networking",
+      "Linux",
+      "A major cloud platform",
+      "Automation",
+      "Security basics"
+    ],
+    "education": [
+      "B.Tech, BCA or BSc in IT",
+      "Certifications from the cloud providers",
+      "Hands-on labs and internships"
+    ],
+    "related": ["devops", "cyber-security", "software-engineering"]
+  },
+  {
+    "id": "robotics-engineering",
+    "name": "Robotics Engineering",
+    "badge": "N",
+    "tone": "h11",
+    "icon": "chip",
+    "group": "Trending now",
+    "description": "Designing and building machines that sense, decide and move.",
+    "duties": [
+      "Design mechanical and electronic parts",
+      "Programme robots and test them",
+      "Fit robots into factories or products"
+    ],
+    "skills": [
+      "Mechanics",
+      "Electronics",
+      "Programming",
+      "Control systems",
+      "Problem solving"
+    ],
+    "education": [
+      "B.Tech in mechanical, electronics, mechatronics or robotics",
+      "Robotics clubs, competitions and projects",
+      "M.Tech for research roles"
+    ],
+    "related": [
+      "artificial-intelligence",
+      "drone-technology",
+      "internet-of-things"
+    ]
+  },
+  {
+    "id": "sustainability",
+    "name": "Sustainability",
+    "badge": "N",
+    "tone": "h6",
+    "icon": "globe",
+    "group": "Trending now",
+    "description": "Helping organisations reduce their impact on the environment and society.",
+    "duties": [
+      "Measure carbon, water and waste",
+      "Plan and report on sustainability goals",
+      "Advise on energy, supply chains and policy"
+    ],
+    "skills": [
+      "Environmental science",
+      "Data analysis",
+      "Reporting",
+      "Policy awareness",
+      "Communication"
+    ],
+    "education": [
+      "Bachelor's in environmental science, engineering, economics or management",
+      "Master's in sustainability, environment or ESG",
+      "Internships with companies, consultancies or NGOs"
+    ],
+    "related": [
+      "renewable-energy-engineering",
+      "architecture",
+      "supply-chain-management"
+    ]
+  },
+  {
+    "id": "drone-technology",
+    "name": "Drone Technology",
+    "badge": "N",
+    "tone": "h1",
+    "icon": "bolt",
+    "group": "Trending now",
+    "description": "Designing, flying and using unmanned aircraft for work such as mapping and inspection.",
+    "duties": [
+      "Fly drones for surveys, photography or delivery",
+      "Build and maintain drone hardware and software",
+      "Process the data collected from the air"
+    ],
+    "skills": [
+      "Flight control",
+      "Electronics",
+      "GIS or imaging",
+      "Regulations",
+      "Safety"
+    ],
+    "education": [
+      "Class 12 science, or a diploma or degree in engineering",
+      "DGCA-approved remote pilot training and certificate",
+      "Experience in agriculture, mapping or media projects"
+    ],
+    "related": ["aviation", "robotics-engineering", "photography"]
+  },
+  {
+    "id": "ethical-hacking",
+    "name": "Ethical Hacking",
+    "badge": "N",
+    "tone": "h8",
+    "icon": "bolt",
+    "group": "More careers to explore",
+    "description": "Legally testing systems for weaknesses before attackers find them.",
+    "duties": [
+      "Probe networks and applications for flaws",
+      "Write clear reports on the risks",
+      "Advise teams how to fix them"
+    ],
+    "skills": [
+      "Networking",
+      "Scripting",
+      "Web security",
+      "Curiosity",
+      "Ethics"
+    ],
+    "education": [
+      "Degree in computer science or IT",
+      "Certifications such as CEH or OSCP",
+      "Practise on legal lab platforms"
+    ],
+    "related": [
+      "cyber-security",
+      "software-testing-and-quality-assurance",
+      "hardware-and-networking"
+    ]
+  },
+  {
+    "id": "full-stack-development",
+    "name": "Full Stack Development",
+    "badge": "D",
+    "tone": "h3",
+    "icon": "chip",
+    "group": "More careers to explore",
+    "description": "Building both the visible side and the back end of web applications.",
+    "duties": [
+      "Build the interfaces users see",
+      "Build servers, databases and APIs",
+      "Deploy and maintain applications"
+    ],
+    "skills": [
+      "HTML, CSS and JavaScript",
+      "A back-end language",
+      "Databases",
+      "APIs",
+      "Version control"
+    ],
+    "education": [
+      "B.Tech, BCA or BSc, or a coding bootcamp",
+      "Build and publish complete projects",
+      "Apply for internships and junior roles"
+    ],
+    "related": [
+      "software-engineering",
+      "mobile-application-development",
+      "user-interface-design"
+    ]
+  },
+  {
+    "id": "devops",
+    "name": "DevOps",
+    "badge": "D",
+    "tone": "h10",
+    "icon": "layers",
+    "group": "More careers to explore",
+    "description": "Connecting software development and operations so releases are fast and reliable.",
+    "duties": [
+      "Automate building, testing and releasing software",
+      "Monitor systems and fix outages",
+      "Manage servers and cloud resources"
+    ],
+    "skills": [
+      "Linux",
+      "Scripting",
+      "CI/CD tools",
+      "Cloud platforms",
+      "Troubleshooting"
+    ],
+    "education": [
+      "B.Tech, BCA or BSc in IT",
+      "Learn containers, automation and a cloud platform",
+      "Start as a developer, system administrator or tester"
+    ],
+    "related": [
+      "cloud-computing",
+      "software-engineering",
+      "software-testing-and-quality-assurance"
+    ]
+  },
+  {
+    "id": "game-development",
+    "name": "Game Development",
+    "badge": "N",
+    "tone": "h5",
+    "icon": "play",
+    "group": "More careers to explore",
+    "description": "Making video games, from first idea to playable build.",
+    "duties": [
+      "Programme game mechanics",
+      "Design levels, characters and stories",
+      "Test and polish gameplay"
+    ],
+    "skills": [
+      "Programming",
+      "A game engine",
+      "Maths",
+      "Art or design sense",
+      "Teamwork"
+    ],
+    "education": [
+      "Degree or diploma in game design, animation or computer science",
+      "Build small games and join game jams",
+      "Keep a playable portfolio"
+    ],
+    "related": ["animation", "multimedia-and-gaming", "graphic-design"]
+  },
+  {
+    "id": "bioinformatics",
+    "name": "Bioinformatics",
+    "badge": "N",
+    "tone": "h0",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Using computing to understand biological data such as genes and proteins.",
+    "duties": [
+      "Analyse DNA and protein data",
+      "Build tools and databases for researchers",
+      "Support drug and genetics research"
+    ],
+    "skills": ["Biology", "Programming", "Statistics", "Databases", "Research"],
+    "education": [
+      "BSc in biology, biotechnology or computer science",
+      "MSc in bioinformatics or a related field",
+      "Research projects or internships"
+    ],
+    "related": ["biotechnology-research", "data-science", "clinical-research"]
+  },
+  {
+    "id": "content-creation",
+    "name": "Content Creation",
+    "badge": "N",
+    "tone": "h7",
+    "icon": "video",
+    "group": "More careers to explore",
+    "description": "Making videos, writing, audio and images that people want to watch, read or share.",
+    "duties": [
+      "Plan and produce content",
+      "Edit and publish on different platforms",
+      "Study audience response and improve"
+    ],
+    "skills": [
+      "Storytelling",
+      "Editing",
+      "Consistency",
+      "Platform knowledge",
+      "Audience insight"
+    ],
+    "education": [
+      "Any degree, and mass communication or media helps",
+      "Start publishing, because a channel or portfolio is your proof",
+      "Learn editing, writing and analytics"
+    ],
+    "related": ["social-media-management", "journalism", "photography"]
+  },
+  {
+    "id": "social-media-management",
+    "name": "Social Media Management",
+    "badge": "D",
+    "tone": "h2",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Running a brand's presence on social platforms.",
+    "duties": [
+      "Plan and schedule posts",
+      "Reply to followers and manage communities",
+      "Report on reach and engagement"
+    ],
+    "skills": [
+      "Writing",
+      "Design basics",
+      "Analytics",
+      "Trend awareness",
+      "Brand voice"
+    ],
+    "education": [
+      "Any bachelor's degree",
+      "Certifications from platforms or marketing bodies",
+      "Manage real accounts for a club, business or brand"
+    ],
+    "related": ["digital-marketing", "content-creation", "public-relations"]
+  },
+  {
+    "id": "financial-analysis",
+    "name": "Financial Analysis",
+    "badge": "D",
+    "tone": "h9",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Studying financial data to guide business and investment decisions.",
+    "duties": [
+      "Build forecasts and models",
+      "Review company performance",
+      "Present recommendations to managers"
+    ],
+    "skills": [
+      "Excel",
+      "Accounting",
+      "Modelling",
+      "Analytical thinking",
+      "Presentation"
+    ],
+    "education": [
+      "B.Com, BBA, economics or a similar degree",
+      "CFA, CA or an MBA in finance",
+      "Internships in finance teams"
+    ],
+    "related": ["investment-banking", "financial-planning", "risk-management"]
+  },
+  {
+    "id": "interior-design",
+    "name": "Interior Design",
+    "badge": "",
+    "tone": "h4",
+    "icon": "building",
+    "group": "More careers to explore",
+    "description": "Planning and styling indoor spaces so they work well and look good.",
+    "duties": [
+      "Understand client needs and budgets",
+      "Draw layouts and choose materials",
+      "Coordinate vendors through installation"
+    ],
+    "skills": [
+      "Space planning",
+      "Design software",
+      "Colour and materials",
+      "Budgeting",
+      "Client handling"
+    ],
+    "education": [
+      "Bachelor's or diploma in interior design after Class 12",
+      "Design entrance tests where required",
+      "Intern at a design studio and build a portfolio"
+    ],
+    "related": ["architecture", "product-design", "visual-merchandising"]
+  },
+  {
+    "id": "event-management",
+    "name": "Event Management",
+    "badge": "",
+    "tone": "h11",
+    "icon": "calendar",
+    "group": "More careers to explore",
+    "description": "Planning and running events, from weddings to conferences.",
+    "duties": [
+      "Plan budgets, venues and schedules",
+      "Manage vendors and teams",
+      "Handle problems on the day"
+    ],
+    "skills": [
+      "Organisation",
+      "Negotiation",
+      "Communication",
+      "Calm under pressure",
+      "Budgeting"
+    ],
+    "education": [
+      "Any degree, and event management degrees and diplomas exist",
+      "Volunteer or intern with event companies",
+      "Build a record of events you have delivered"
+    ],
+    "related": ["public-relations", "sports-management", "culinary-arts"]
+  },
+  {
+    "id": "fashion-design",
+    "name": "Fashion Design",
+    "badge": "",
+    "tone": "h6",
+    "icon": "layers",
+    "group": "More careers to explore",
+    "description": "Creating clothing and accessories from sketch to finished product.",
+    "duties": [
+      "Research trends and sketch designs",
+      "Choose fabrics and make samples",
+      "Work with makers on production"
+    ],
+    "skills": [
+      "Sketching",
+      "Pattern making",
+      "Fabric knowledge",
+      "Trend sense",
+      "Business sense"
+    ],
+    "education": [
+      "Bachelor's in fashion design after Class 12",
+      "Design school entrance tests and portfolios",
+      "Internships with designers or brands"
+    ],
+    "related": ["visual-merchandising", "graphic-design", "entrepreneurship"]
+  },
+  {
+    "id": "journalism",
+    "name": "Journalism",
+    "badge": "",
+    "tone": "h1",
+    "icon": "layers",
+    "group": "More careers to explore",
+    "description": "Finding, checking and telling news stories.",
+    "duties": [
+      "Research and interview sources",
+      "Write, edit or present stories",
+      "Verify facts before publishing"
+    ],
+    "skills": [
+      "Writing",
+      "Curiosity",
+      "Fact-checking",
+      "Interviewing",
+      "Ethics"
+    ],
+    "education": [
+      "Bachelor's or postgraduate diploma in journalism or mass communication",
+      "Intern at newspapers, channels or digital outlets",
+      "Build a body of published work"
+    ],
+    "related": ["content-creation", "creative-writing", "public-relations"]
+  },
+  {
+    "id": "veterinary-science",
+    "name": "Veterinary Science",
+    "badge": "",
+    "tone": "h8",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Caring for the health of animals.",
+    "duties": [
+      "Examine and treat animals",
+      "Vaccinate and advise owners and farmers",
+      "Support public health and food safety"
+    ],
+    "skills": [
+      "Biology",
+      "Patience",
+      "Practical skills",
+      "Communication",
+      "Compassion"
+    ],
+    "education": [
+      "Class 12 science with biology",
+      "NEET-UG for BVSc & AH",
+      "Register with the veterinary council"
+    ],
+    "related": ["medicine", "biotechnology-research", "nutrition-and-dietetics"]
+  },
+  {
+    "id": "nutrition-and-dietetics",
+    "name": "Nutrition and Dietetics",
+    "badge": "D",
+    "tone": "h3",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Using food and nutrition science to improve health.",
+    "duties": [
+      "Assess diet and health needs",
+      "Plan meals for patients, athletes or groups",
+      "Educate people on healthy habits"
+    ],
+    "skills": [
+      "Nutrition science",
+      "Counselling",
+      "Empathy",
+      "Planning",
+      "Communication"
+    ],
+    "education": [
+      "BSc in nutrition, dietetics or food science",
+      "MSc and a hospital internship",
+      "Registered dietitian credentials where applicable"
+    ],
+    "related": ["sports-management", "medicine", "culinary-arts"]
+  },
+  {
+    "id": "sports-management",
+    "name": "Sports Management",
+    "badge": "N",
+    "tone": "h10",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Running the business side of sport: teams, events, leagues and athletes.",
+    "duties": [
+      "Manage events, sponsorships and budgets",
+      "Handle marketing and fan engagement",
+      "Support athletes and teams"
+    ],
+    "skills": [
+      "Organisation",
+      "Marketing",
+      "Negotiation",
+      "Sports knowledge",
+      "Communication"
+    ],
+    "education": [
+      "Any degree, or a BBA or MBA in sports management",
+      "Internships with clubs, leagues and event firms",
+      "Volunteer at local tournaments"
+    ],
+    "related": ["event-management", "business-management", "public-relations"]
+  },
+  {
+    "id": "supply-chain-management",
+    "name": "Supply Chain Management",
+    "badge": "D",
+    "tone": "h5",
+    "icon": "pin",
+    "group": "More careers to explore",
+    "description": "Planning how goods are made, stored and moved to customers.",
+    "duties": [
+      "Plan inventory and transport",
+      "Coordinate suppliers and warehouses",
+      "Cut cost and delay"
+    ],
+    "skills": [
+      "Planning",
+      "Data analysis",
+      "Negotiation",
+      "Excel and ERP tools",
+      "Problem solving"
+    ],
+    "education": [
+      "Bachelor's in engineering, commerce or management",
+      "MBA with a supply chain or operations focus",
+      "Certifications in logistics and procurement"
+    ],
+    "related": ["operations-management", "retail-management", "sustainability"]
+  },
+  {
+    "id": "human-resource-management",
+    "name": "Human Resource Management",
+    "badge": "D",
+    "tone": "h0",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Hiring, developing and supporting people in organisations.",
+    "duties": [
+      "Recruit and onboard staff",
+      "Run training and performance reviews",
+      "Handle policies and employee concerns"
+    ],
+    "skills": [
+      "Communication",
+      "Empathy",
+      "Fairness",
+      "Labour laws",
+      "Interviewing"
+    ],
+    "education": [
+      "Any bachelor's degree",
+      "MBA or PG diploma in HR",
+      "Internships in HR teams"
+    ],
+    "related": ["psychology", "business-management", "corporate-communication"]
+  },
+  {
+    "id": "sales-management",
+    "name": "Sales Management",
+    "badge": "D",
+    "tone": "h7",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Leading teams that sell products or services.",
+    "duties": [
+      "Set targets and plan territories",
+      "Coach salespeople",
+      "Track the pipeline and customer relationships"
+    ],
+    "skills": [
+      "Persuasion",
+      "Communication",
+      "Target focus",
+      "CRM tools",
+      "Resilience"
+    ],
+    "education": [
+      "Any bachelor's degree",
+      "Start in a sales role, then move to team lead",
+      "An MBA in marketing or sales helps in larger firms"
+    ],
+    "related": ["business-management", "retail-management", "growth-marketing"]
+  },
+  {
+    "id": "actuarial-science",
+    "name": "Actuarial Science",
+    "badge": "H",
+    "tone": "h2",
+    "icon": "bars",
+    "group": "More careers to explore",
+    "description": "Using maths and statistics to measure financial risk, especially in insurance and pensions.",
+    "duties": [
+      "Model the chance and cost of future events",
+      "Price insurance products",
+      "Report on reserves and risk"
+    ],
+    "skills": [
+      "Probability",
+      "Statistics",
+      "Excel and coding",
+      "Finance",
+      "Patience for exams"
+    ],
+    "education": [
+      "Bachelor's in maths, statistics, economics or similar",
+      "Clear the ACET and the Institute of Actuaries of India exams",
+      "Work in insurance, consulting or pensions"
+    ],
+    "related": ["risk-management", "financial-analysis", "economics"]
+  },
+  {
+    "id": "renewable-energy-engineering",
+    "name": "Renewable Energy Engineering",
+    "badge": "N",
+    "tone": "h9",
+    "icon": "bolt",
+    "group": "More careers to explore",
+    "description": "Designing systems that make power from the sun, wind, water and other renewable sources.",
+    "duties": [
+      "Design and test solar, wind or hydro systems",
+      "Plan grids and storage",
+      "Supervise installation and performance"
+    ],
+    "skills": [
+      "Electrical basics",
+      "Energy systems",
+      "Design software",
+      "Project work",
+      "Policy awareness"
+    ],
+    "education": [
+      "B.Tech in electrical, mechanical or energy engineering",
+      "M.Tech or specialised courses in renewable energy",
+      "Internships with energy developers"
+    ],
+    "related": ["sustainability", "project-management", "economics"]
+  },
+  {
+    "id": "internet-of-things",
+    "name": "Internet of Things",
+    "badge": "N",
+    "tone": "h4",
+    "icon": "chip",
+    "group": "More careers to explore",
+    "description": "Connecting everyday devices to the internet so they can share data.",
+    "duties": [
+      "Build sensors and connected devices",
+      "Link devices to cloud systems",
+      "Analyse the data they produce"
+    ],
+    "skills": [
+      "Electronics",
+      "Embedded programming",
+      "Networking",
+      "Cloud basics",
+      "Data handling"
+    ],
+    "education": [
+      "B.Tech in electronics, computer science or a related field",
+      "Hands-on kits and small projects",
+      "Internships in product or automation firms"
+    ],
+    "related": [
+      "hardware-and-networking",
+      "cloud-computing",
+      "robotics-engineering"
+    ]
+  },
+  {
+    "id": "mobile-application-development",
+    "name": "Mobile Application Development",
+    "badge": "D",
+    "tone": "h11",
+    "icon": "chip",
+    "group": "More careers to explore",
+    "description": "Building apps for phones and tablets.",
+    "duties": [
+      "Design and code Android or iOS apps",
+      "Connect apps to servers and data",
+      "Publish and update apps in app stores"
+    ],
+    "skills": [
+      "Kotlin, Swift or cross-platform tools",
+      "Interface patterns",
+      "APIs",
+      "Testing",
+      "Problem solving"
+    ],
+    "education": [
+      "B.Tech, BCA or BSc",
+      "Build and publish a few apps",
+      "Learn each platform's design guidelines"
+    ],
+    "related": [
+      "full-stack-development",
+      "user-interface-design",
+      "software-engineering"
+    ]
+  },
+  {
+    "id": "software-testing-and-quality-assurance",
+    "name": "Software Testing and Quality Assurance",
+    "badge": "D",
+    "tone": "h6",
+    "icon": "check",
+    "group": "More careers to explore",
+    "description": "Checking that software works properly before and after release.",
+    "duties": [
+      "Write and run test cases",
+      "Automate repeat checks",
+      "Report bugs and verify fixes"
+    ],
+    "skills": [
+      "Attention to detail",
+      "Test tools",
+      "Basic scripting",
+      "Communication",
+      "Analytical thinking"
+    ],
+    "education": [
+      "B.Tech, BCA, BSc or MCA",
+      "Testing certifications such as ISTQB",
+      "Start as a tester, then move into automation"
+    ],
+    "related": ["devops", "software-engineering", "ethical-hacking"]
+  },
+  {
+    "id": "hardware-and-networking",
+    "name": "Hardware and Networking",
+    "badge": "",
+    "tone": "h1",
+    "icon": "chip",
+    "group": "More careers to explore",
+    "description": "Setting up and maintaining computers and networks.",
+    "duties": [
+      "Install and repair devices",
+      "Configure and secure networks",
+      "Support users and fix faults"
+    ],
+    "skills": [
+      "Computer hardware",
+      "Networking",
+      "Troubleshooting",
+      "Operating systems",
+      "Patience"
+    ],
+    "education": [
+      "Diploma, BCA or B.Tech in IT or electronics",
+      "Certifications such as CCNA",
+      "Start in IT support or a service centre"
+    ],
+    "related": ["cyber-security", "cloud-computing", "internet-of-things"]
+  },
+  {
+    "id": "information-technology-business-analysis",
+    "name": "Information Technology Business Analysis",
+    "badge": "D",
+    "tone": "h8",
+    "icon": "bars",
+    "group": "More careers to explore",
+    "description": "Bridging business needs and technology teams.",
+    "duties": [
+      "Gather and document requirements",
+      "Map processes and find improvements",
+      "Work with developers and testers to deliver"
+    ],
+    "skills": [
+      "Analysis",
+      "Communication",
+      "Documentation",
+      "Process thinking",
+      "Stakeholder handling"
+    ],
+    "education": [
+      "Bachelor's in IT, engineering or commerce",
+      "MBA or business analysis certifications",
+      "Experience in testing, support or operations"
+    ],
+    "related": ["product-management", "data-science", "project-management"]
+  },
+  {
+    "id": "user-interface-design",
+    "name": "User Interface Design",
+    "badge": "D",
+    "tone": "h3",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Designing the screens, buttons and visual details people interact with.",
+    "duties": [
+      "Design layouts, colours and typography",
+      "Build style guides and components",
+      "Work with developers to build the designs"
+    ],
+    "skills": [
+      "Visual design",
+      "Design tools",
+      "Typography",
+      "Accessibility",
+      "Attention to detail"
+    ],
+    "education": [
+      "Degree or diploma in design, fine arts or similar",
+      "Practise with industry design tools",
+      "Portfolio of redesigns and projects"
+    ],
+    "related": [
+      "user-experience-design-ux",
+      "graphic-design",
+      "mobile-application-development"
+    ]
+  },
+  {
+    "id": "graphic-design",
+    "name": "Graphic Design",
+    "badge": "D",
+    "tone": "h10",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Communicating ideas visually through logos, layouts, posters and more.",
+    "duties": [
+      "Create brand identities and layouts",
+      "Prepare files for print and digital",
+      "Work from client feedback"
+    ],
+    "skills": [
+      "Typography",
+      "Colour",
+      "Design software",
+      "Creativity",
+      "Client communication"
+    ],
+    "education": [
+      "Bachelor's or diploma in graphic or visual design",
+      "Design entrance tests where required",
+      "Portfolio of varied projects"
+    ],
+    "related": ["user-interface-design", "advertising", "animation"]
+  },
+  {
+    "id": "product-design",
+    "name": "Product Design",
+    "badge": "",
+    "tone": "h5",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Designing physical products that are useful, safe and appealing.",
+    "duties": [
+      "Research how people use products",
+      "Sketch, model and prototype",
+      "Work with makers on production"
+    ],
+    "skills": [
+      "Sketching",
+      "3D modelling",
+      "Materials",
+      "User research",
+      "Problem solving"
+    ],
+    "education": [
+      "Bachelor's in product or industrial design, often through UCEED or NID DAT",
+      "Build prototypes",
+      "Portfolio and internships"
+    ],
+    "related": [
+      "industrial-design",
+      "interior-design",
+      "user-experience-design-ux"
+    ]
+  },
+  {
+    "id": "industrial-design",
+    "name": "Industrial Design",
+    "badge": "",
+    "tone": "h0",
+    "icon": "building",
+    "group": "More careers to explore",
+    "description": "Shaping mass-produced objects such as appliances, vehicles and furniture.",
+    "duties": [
+      "Design form and function for factory production",
+      "Test with models and users",
+      "Balance cost, materials and looks"
+    ],
+    "skills": [
+      "Sketching",
+      "CAD",
+      "Materials and manufacturing",
+      "Ergonomics",
+      "Teamwork"
+    ],
+    "education": [
+      "B.Des or diploma in industrial design",
+      "UCEED, NID DAT or similar entrance exams",
+      "Studio projects and internships"
+    ],
+    "related": ["product-design", "architecture", "robotics-engineering"]
+  },
+  {
+    "id": "visual-merchandising",
+    "name": "Visual Merchandising",
+    "badge": "",
+    "tone": "h7",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Arranging stores and displays so products catch attention and sell.",
+    "duties": [
+      "Plan window and in-store displays",
+      "Choose layouts, lighting and props",
+      "Track what sells best"
+    ],
+    "skills": [
+      "Creativity",
+      "Colour sense",
+      "Spatial planning",
+      "Brand awareness",
+      "Retail knowledge"
+    ],
+    "education": [
+      "Diploma or degree in fashion, retail or design",
+      "Internships with retail brands",
+      "Portfolio of display work"
+    ],
+    "related": ["retail-management", "fashion-design", "interior-design"]
+  },
+  {
+    "id": "animation",
+    "name": "Animation",
+    "badge": "",
+    "tone": "h2",
+    "icon": "play",
+    "group": "More careers to explore",
+    "description": "Bringing drawings, models and characters to life on screen.",
+    "duties": [
+      "Create characters and movement",
+      "Work on films, games, ads or series",
+      "Use 2D or 3D software"
+    ],
+    "skills": [
+      "Drawing",
+      "Timing",
+      "Animation software",
+      "Storytelling",
+      "Patience"
+    ],
+    "education": [
+      "Degree or diploma in animation or multimedia",
+      "Entrance tests for design schools",
+      "A showreel of your best work"
+    ],
+    "related": ["game-development", "multimedia-and-gaming", "graphic-design"]
+  },
+  {
+    "id": "multimedia-and-gaming",
+    "name": "Multimedia and Gaming",
+    "badge": "N",
+    "tone": "h9",
+    "icon": "play",
+    "group": "More careers to explore",
+    "description": "Combining text, images, sound and video into interactive media.",
+    "duties": [
+      "Produce videos, graphics and interactive content",
+      "Build assets for games and apps",
+      "Edit and combine media"
+    ],
+    "skills": [
+      "Editing tools",
+      "Design sense",
+      "Storytelling",
+      "Basic coding",
+      "Teamwork"
+    ],
+    "education": [
+      "Degree or diploma in multimedia, design or computer graphics",
+      "Practise with editing and design tools",
+      "Showreel or portfolio"
+    ],
+    "related": ["animation", "game-development", "photography"]
+  },
+  {
+    "id": "photography",
+    "name": "Photography",
+    "badge": "",
+    "tone": "h4",
+    "icon": "layers",
+    "group": "More careers to explore",
+    "description": "Capturing images for news, brands, weddings, products and art.",
+    "duties": [
+      "Plan and shoot assignments",
+      "Edit and deliver images",
+      "Manage clients and licensing"
+    ],
+    "skills": [
+      "Camera skills",
+      "Lighting",
+      "Editing",
+      "Composition",
+      "Business sense"
+    ],
+    "education": [
+      "Courses or a diploma in photography, or self-taught",
+      "Assist an established photographer",
+      "Build an online portfolio"
+    ],
+    "related": ["content-creation", "drone-technology", "fine-arts"]
+  },
+  {
+    "id": "sound-engineering",
+    "name": "Sound Engineering",
+    "badge": "",
+    "tone": "h11",
+    "icon": "sound",
+    "group": "More careers to explore",
+    "description": "Recording, mixing and shaping sound for music, film, broadcast and live events.",
+    "duties": [
+      "Record and edit audio",
+      "Mix and master tracks",
+      "Set up sound for studios and events"
+    ],
+    "skills": [
+      "Acoustics",
+      "Audio software",
+      "Critical listening",
+      "Technical setup",
+      "Teamwork"
+    ],
+    "education": [
+      "Diploma or degree in sound engineering or music technology",
+      "Practise in studios",
+      "Intern with studios, broadcasters or event firms"
+    ],
+    "related": ["multimedia-and-gaming", "performing-arts", "photography"]
+  },
+  {
+    "id": "image-consulting",
+    "name": "Image Consulting",
+    "badge": "N",
+    "tone": "h6",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Helping people and professionals present themselves with confidence.",
+    "duties": [
+      "Advise on dress, grooming and etiquette",
+      "Coach communication and body language",
+      "Work with individuals and companies"
+    ],
+    "skills": [
+      "Style sense",
+      "Communication",
+      "Empathy",
+      "Etiquette",
+      "Observation"
+    ],
+    "education": [
+      "Any degree, and psychology, fashion or communication helps",
+      "Certification from an image consulting institute",
+      "Build a client base through workshops"
+    ],
+    "related": ["fashion-design", "corporate-communication", "psychology"]
+  },
+  {
+    "id": "fine-arts",
+    "name": "Fine Arts",
+    "badge": "",
+    "tone": "h1",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Creating original work in painting, sculpture, printmaking and other art forms.",
+    "duties": [
+      "Develop your own style and series",
+      "Exhibit and sell work",
+      "Teach, restore or curate"
+    ],
+    "skills": [
+      "Drawing",
+      "Creativity",
+      "Technique",
+      "Discipline",
+      "Self-promotion"
+    ],
+    "education": [
+      "BFA and MFA from art colleges",
+      "Entrance tests and portfolios",
+      "Exhibit and build a collector base"
+    ],
+    "related": ["graphic-design", "photography", "creative-writing"]
+  },
+  {
+    "id": "performing-arts",
+    "name": "Performing Arts",
+    "badge": "",
+    "tone": "h8",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Performing in music, dance, theatre or film.",
+    "duties": ["Rehearse and perform", "Audition and tour", "Teach or direct"],
+    "skills": [
+      "Practice",
+      "Stage presence",
+      "Creativity",
+      "Discipline",
+      "Teamwork"
+    ],
+    "education": [
+      "Formal training in your art form, often from a young age",
+      "Degree or diploma from a performing arts institute",
+      "Performances, auditions and workshops"
+    ],
+    "related": ["sound-engineering", "event-management", "fine-arts"]
+  },
+  {
+    "id": "public-relations",
+    "name": "Public Relations",
+    "badge": "D",
+    "tone": "h3",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Managing how an organisation is seen by the public and the media.",
+    "duties": [
+      "Write press releases and statements",
+      "Build relationships with the media",
+      "Handle crises and reputation"
+    ],
+    "skills": [
+      "Writing",
+      "Networking",
+      "Judgement",
+      "Speaking",
+      "Calm under pressure"
+    ],
+    "education": [
+      "Bachelor's in mass communication, journalism or any stream",
+      "PG diploma in PR or communication",
+      "Internships with PR agencies"
+    ],
+    "related": ["corporate-communication", "journalism", "advertising"]
+  },
+  {
+    "id": "advertising",
+    "name": "Advertising",
+    "badge": "",
+    "tone": "h10",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Creating campaigns that make people notice and remember a brand.",
+    "duties": [
+      "Develop ideas and messages",
+      "Plan media and budgets",
+      "Work with designers and writers"
+    ],
+    "skills": [
+      "Creativity",
+      "Writing",
+      "Strategy",
+      "Understanding people",
+      "Teamwork"
+    ],
+    "education": [
+      "Bachelor's in mass communication, design or any stream",
+      "Courses in advertising and marketing",
+      "Internships at agencies"
+    ],
+    "related": ["brand-management", "graphic-design", "digital-marketing"]
+  },
+  {
+    "id": "corporate-communication",
+    "name": "Corporate Communication",
+    "badge": "",
+    "tone": "h5",
+    "icon": "briefcase",
+    "group": "More careers to explore",
+    "description": "Managing a company's messages to employees, investors and the public.",
+    "duties": [
+      "Plan internal and external messages",
+      "Write reports and speeches",
+      "Handle media and stakeholder queries"
+    ],
+    "skills": [
+      "Writing",
+      "Strategy",
+      "Judgement",
+      "Presentation",
+      "Relationship building"
+    ],
+    "education": [
+      "Bachelor's in mass communication, English, business or similar",
+      "MBA or PG diploma in communication",
+      "Experience in PR, journalism or HR"
+    ],
+    "related": [
+      "public-relations",
+      "human-resource-management",
+      "brand-management"
+    ]
+  },
+  {
+    "id": "creative-writing",
+    "name": "Creative Writing",
+    "badge": "",
+    "tone": "h0",
+    "icon": "layers",
+    "group": "More careers to explore",
+    "description": "Writing stories, scripts, poetry and copy that engage readers.",
+    "duties": [
+      "Write fiction, scripts, blogs or ads",
+      "Edit and rewrite your work",
+      "Submit work or pitch ideas"
+    ],
+    "skills": [
+      "Imagination",
+      "Language",
+      "Discipline",
+      "Editing",
+      "Resilience"
+    ],
+    "education": [
+      "Degree in English, literature or any stream",
+      "Writing workshops and courses",
+      "Publish regularly and build a body of work"
+    ],
+    "related": ["journalism", "content-creation", "advertising"]
+  },
+  {
+    "id": "interpretation-and-translation",
+    "name": "Interpretation and Translation",
+    "badge": "D",
+    "tone": "h7",
+    "icon": "globe",
+    "group": "More careers to explore",
+    "description": "Moving meaning between languages, in speech or in writing.",
+    "duties": [
+      "Interpret live conversations",
+      "Translate documents and websites",
+      "Check accuracy and tone"
+    ],
+    "skills": [
+      "Fluency in two or more languages",
+      "Listening",
+      "Accuracy",
+      "Cultural knowledge",
+      "Subject expertise"
+    ],
+    "education": [
+      "Bachelor's or master's in a foreign language or linguistics",
+      "Recognised proficiency certificates in your languages",
+      "Specialise in law, medicine or business"
+    ],
+    "related": ["journalism", "corporate-communication", "creative-writing"]
+  },
+  {
+    "id": "business-management",
+    "name": "Business Management",
+    "badge": "D",
+    "tone": "h2",
+    "icon": "briefcase",
+    "group": "More careers to explore",
+    "description": "Running and growing organisations by managing people, money and operations.",
+    "duties": [
+      "Set goals and plans",
+      "Manage teams and budgets",
+      "Make decisions with data"
+    ],
+    "skills": [
+      "Leadership",
+      "Communication",
+      "Decision-making",
+      "Finance basics",
+      "Planning"
+    ],
+    "education": [
+      "BBA or any bachelor's degree",
+      "MBA from a recognised business school",
+      "Experience, ideally across several functions"
+    ],
+    "related": [
+      "entrepreneurship",
+      "operations-management",
+      "strategy-consulting"
+    ]
+  },
+  {
+    "id": "entrepreneurship",
+    "name": "Entrepreneurship",
+    "badge": "",
+    "tone": "h9",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Starting and building your own business.",
+    "duties": [
+      "Spot problems worth solving",
+      "Build a product, team and customer base",
+      "Raise and manage money"
+    ],
+    "skills": [
+      "Initiative",
+      "Resilience",
+      "Selling",
+      "Money sense",
+      "Networking"
+    ],
+    "education": [
+      "Any degree, and a work or project background helps",
+      "Incubators, accelerators and start-up programmes",
+      "Start small and learn from customers"
+    ],
+    "related": ["business-management", "product-management", "growth-marketing"]
+  },
+  {
+    "id": "strategy-consulting",
+    "name": "Strategy Consulting",
+    "badge": "H",
+    "tone": "h4",
+    "icon": "target",
+    "group": "More careers to explore",
+    "description": "Advising organisations on their biggest business decisions.",
+    "duties": [
+      "Analyse markets and operations",
+      "Build and present recommendations",
+      "Work on projects across industries"
+    ],
+    "skills": [
+      "Problem solving",
+      "Structured thinking",
+      "Excel",
+      "Communication",
+      "Stamina"
+    ],
+    "education": [
+      "Strong degree in engineering, commerce or economics",
+      "MBA from a leading school",
+      "Case practice and relevant internships"
+    ],
+    "related": ["business-management", "investment-banking", "economics"]
+  },
+  {
+    "id": "project-management",
+    "name": "Project Management",
+    "badge": "D",
+    "tone": "h11",
+    "icon": "check",
+    "group": "More careers to explore",
+    "description": "Leading projects to finish on time, within budget and to a clear scope.",
+    "duties": [
+      "Plan tasks, timelines and budgets",
+      "Coordinate teams and track progress",
+      "Manage risks and report to stakeholders"
+    ],
+    "skills": [
+      "Organisation",
+      "Communication",
+      "Risk thinking",
+      "Leadership",
+      "Planning tools"
+    ],
+    "education": [
+      "Any bachelor's degree, often engineering or management",
+      "PMP, PRINCE2 or Agile certifications",
+      "Experience coordinating small projects"
+    ],
+    "related": [
+      "operations-management",
+      "business-management",
+      "information-technology-business-analysis"
+    ]
+  },
+  {
+    "id": "operations-management",
+    "name": "Operations Management",
+    "badge": "D",
+    "tone": "h6",
+    "icon": "briefcase",
+    "group": "More careers to explore",
+    "description": "Making sure a business delivers its products or services efficiently.",
+    "duties": [
+      "Improve processes and quality",
+      "Plan staff, stock and schedules",
+      "Control costs and delays"
+    ],
+    "skills": [
+      "Process thinking",
+      "Data analysis",
+      "Leadership",
+      "Problem solving",
+      "Planning"
+    ],
+    "education": [
+      "Bachelor's in engineering, commerce or management",
+      "MBA in operations",
+      "Start in a plant, warehouse or service team"
+    ],
+    "related": [
+      "supply-chain-management",
+      "project-management",
+      "retail-management"
+    ]
+  },
+  {
+    "id": "retail-management",
+    "name": "Retail Management",
+    "badge": "",
+    "tone": "h1",
+    "icon": "briefcase",
+    "group": "More careers to explore",
+    "description": "Running stores and retail chains.",
+    "duties": [
+      "Manage staff and daily store operations",
+      "Plan stock, displays and promotions",
+      "Track sales and customer feedback"
+    ],
+    "skills": [
+      "Customer focus",
+      "Leadership",
+      "Numbers",
+      "Merchandising",
+      "Organisation"
+    ],
+    "education": [
+      "Any bachelor's degree, or a BBA in retail",
+      "Management trainee programmes at retailers",
+      "MBA for senior roles"
+    ],
+    "related": [
+      "visual-merchandising",
+      "sales-management",
+      "supply-chain-management"
+    ]
+  },
+  {
+    "id": "growth-marketing",
+    "name": "Growth Marketing",
+    "badge": "N",
+    "tone": "h8",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Finding fast, measurable ways to grow a product's users and revenue.",
+    "duties": [
+      "Run experiments across channels",
+      "Study funnels and user behaviour",
+      "Scale what works"
+    ],
+    "skills": [
+      "Analytics",
+      "Experimentation",
+      "Marketing channels",
+      "Curiosity",
+      "Writing"
+    ],
+    "education": [
+      "Any degree, such as business, marketing or engineering",
+      "Courses and certifications in analytics and marketing",
+      "Work on growth at a start-up"
+    ],
+    "related": [
+      "digital-marketing",
+      "performance-marketing",
+      "product-management"
+    ]
+  },
+  {
+    "id": "performance-marketing",
+    "name": "Performance Marketing",
+    "badge": "N",
+    "tone": "h3",
+    "icon": "trend",
+    "group": "More careers to explore",
+    "description": "Running paid campaigns where every rupee is tied to results.",
+    "duties": [
+      "Set up and manage paid ads",
+      "Track conversions and cost",
+      "Adjust budgets and creative"
+    ],
+    "skills": [
+      "Ad platforms",
+      "Analytics",
+      "Spreadsheet skills",
+      "Testing",
+      "Budgeting"
+    ],
+    "education": [
+      "Any bachelor's degree",
+      "Certifications from ad platforms",
+      "Practise with small budgets or internships"
+    ],
+    "related": ["digital-marketing", "growth-marketing", "advertising"]
+  },
+  {
+    "id": "brand-management",
+    "name": "Brand Management",
+    "badge": "",
+    "tone": "h10",
+    "icon": "spark",
+    "group": "More careers to explore",
+    "description": "Building and protecting how people see and feel about a brand.",
+    "duties": [
+      "Plan brand positioning and campaigns",
+      "Work with agencies and designers",
+      "Track brand health and sales"
+    ],
+    "skills": [
+      "Strategy",
+      "Creativity",
+      "Market insight",
+      "Communication",
+      "Analytics"
+    ],
+    "education": [
+      "BBA, BMS or any bachelor's degree",
+      "MBA in marketing",
+      "Management trainee roles at consumer companies"
+    ],
+    "related": ["advertising", "corporate-communication", "digital-marketing"]
+  },
+  {
+    "id": "chartered-accountancy",
+    "name": "Chartered Accountancy",
+    "badge": "D",
+    "tone": "h5",
+    "icon": "bars",
+    "group": "More careers to explore",
+    "description": "Auditing accounts, handling tax and advising businesses on finance.",
+    "duties": [
+      "Audit financial statements",
+      "Prepare returns and advise on tax",
+      "Advise on compliance and strategy"
+    ],
+    "skills": [
+      "Accounting",
+      "Tax law",
+      "Analytical thinking",
+      "Ethics",
+      "Stamina"
+    ],
+    "education": [
+      "ICAI route: Foundation, Intermediate and Final",
+      "Articleship (practical training) of about three years",
+      "Membership of ICAI after clearing all stages"
+    ],
+    "related": [
+      "cost-and-management-accounting",
+      "company-secretaryship",
+      "financial-analysis"
+    ]
+  },
+  {
+    "id": "cost-and-management-accounting",
+    "name": "Cost and Management Accounting",
+    "badge": "D",
+    "tone": "h0",
+    "icon": "bars",
+    "group": "More careers to explore",
+    "description": "Tracking and controlling costs inside organisations to support better decisions.",
+    "duties": [
+      "Prepare budgets and cost reports",
+      "Analyse product and project costs",
+      "Advise managers on savings"
+    ],
+    "skills": [
+      "Costing",
+      "Excel",
+      "Analysis",
+      "Accounting standards",
+      "Attention to detail"
+    ],
+    "education": [
+      "ICMAI route: Foundation, Intermediate and Final",
+      "Practical training",
+      "B.Com or a related degree alongside"
+    ],
+    "related": [
+      "chartered-accountancy",
+      "financial-analysis",
+      "financial-planning"
+    ]
+  },
+  {
+    "id": "company-secretaryship",
+    "name": "Company Secretaryship",
+    "badge": "",
+    "tone": "h7",
+    "icon": "briefcase",
+    "group": "More careers to explore",
+    "description": "Making sure companies follow corporate laws and governance rules.",
+    "duties": [
+      "Prepare for board and shareholder meetings",
+      "File returns with regulators",
+      "Advise on compliance"
+    ],
+    "skills": [
+      "Corporate law",
+      "Documentation",
+      "Communication",
+      "Integrity",
+      "Attention to detail"
+    ],
+    "education": [
+      "ICSI route: Foundation, Executive and Professional",
+      "Practical training",
+      "Graduates can enter at the Executive stage"
+    ],
+    "related": ["law", "chartered-accountancy", "risk-management"]
+  },
+  {
+    "id": "financial-planning",
+    "name": "Financial Planning",
+    "badge": "D",
+    "tone": "h2",
+    "icon": "bars",
+    "group": "More careers to explore",
+    "description": "Helping individuals and families plan savings, investments, insurance and retirement.",
+    "duties": [
+      "Understand goals and cash flow",
+      "Recommend investments and insurance",
+      "Review plans over time"
+    ],
+    "skills": [
+      "Money knowledge",
+      "Communication",
+      "Trust",
+      "Planning",
+      "Ethics"
+    ],
+    "education": [
+      "Bachelor's in commerce, finance or any stream",
+      "Certifications such as CFP or NISM modules",
+      "Experience with a wealth or advisory firm"
+    ],
+    "related": ["financial-analysis", "investment-banking", "actuarial-science"]
+  },
+  {
+    "id": "risk-management",
+    "name": "Risk Management",
+    "badge": "D",
+    "tone": "h9",
+    "icon": "target",
+    "group": "More careers to explore",
+    "description": "Spotting and reducing threats to a business, from financial to operational.",
+    "duties": [
+      "Identify and measure risks",
+      "Build controls and policies",
+      "Report to leadership"
+    ],
+    "skills": [
+      "Analytical thinking",
+      "Statistics",
+      "Judgement",
+      "Communication",
+      "Finance"
+    ],
+    "education": [
+      "Degree in finance, economics, maths or engineering",
+      "FRM or related certifications",
+      "Experience in banking, audit or insurance"
+    ],
+    "related": ["actuarial-science", "financial-analysis", "investment-banking"]
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "badge": "",
+    "tone": "h4",
+    "icon": "globe",
+    "group": "More careers to explore",
+    "description": "Studying how people, firms and governments use limited resources.",
+    "duties": [
+      "Analyse data and trends",
+      "Advise on policy or business decisions",
+      "Research and publish findings"
+    ],
+    "skills": [
+      "Maths and statistics",
+      "Critical thinking",
+      "Writing",
+      "Data tools",
+      "Curiosity"
+    ],
+    "education": [
+      "BA or BSc in economics",
+      "A master's in economics, often needed for research and policy",
+      "Internships at think tanks, banks or research firms"
+    ],
+    "related": ["civil-services", "data-science", "strategy-consulting"]
+  },
+  {
+    "id": "biotechnology-research",
+    "name": "Biotechnology Research",
+    "badge": "N",
+    "tone": "h11",
+    "icon": "globe",
+    "group": "More careers to explore",
+    "description": "Using living systems to develop medicines, crops and industrial products.",
+    "duties": [
+      "Run laboratory experiments",
+      "Develop and test new products",
+      "Publish and present findings"
+    ],
+    "skills": [
+      "Biology",
+      "Lab skills",
+      "Data analysis",
+      "Patience",
+      "Scientific writing"
+    ],
+    "education": [
+      "BSc or B.Tech in biotechnology or life sciences",
+      "MSc, M.Tech and often a PhD",
+      "Lab internships and research projects"
+    ],
+    "related": ["bioinformatics", "clinical-research", "biomedical-engineering"]
+  },
+  {
+    "id": "clinical-research",
+    "name": "Clinical Research",
+    "badge": "D",
+    "tone": "h6",
+    "icon": "users",
+    "group": "More careers to explore",
+    "description": "Testing new medicines and treatments safely in people.",
+    "duties": [
+      "Coordinate clinical trials",
+      "Monitor safety and data quality",
+      "Prepare reports for regulators"
+    ],
+    "skills": [
+      "Science background",
+      "Documentation",
+      "Ethics",
+      "Regulations",
+      "Attention to detail"
+    ],
+    "education": [
+      "Degree in pharmacy, life sciences, nursing or medicine",
+      "PG diploma or certification in clinical research",
+      "Entry roles such as clinical research associate"
+    ],
+    "related": ["medicine", "biotechnology-research", "bioinformatics"]
+  },
+  {
+    "id": "biomedical-engineering",
+    "name": "Biomedical Engineering",
+    "badge": "N",
+    "tone": "h1",
+    "icon": "layers",
+    "group": "More careers to explore",
+    "description": "Designing medical devices and tools that help diagnose and treat patients.",
+    "duties": [
+      "Design and test devices such as scanners or implants",
+      "Work with doctors and hospitals",
+      "Meet safety and regulatory standards"
+    ],
+    "skills": [
+      "Engineering",
+      "Biology",
+      "Electronics",
+      "Design",
+      "Problem solving"
+    ],
+    "education": [
+      "B.Tech in biomedical engineering or a related field",
+      "M.Tech for design and research roles",
+      "Internships in hospitals or device companies"
+    ],
+    "related": ["medicine", "robotics-engineering", "biotechnology-research"]
+  }
+]

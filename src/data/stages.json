@@ -1,0 +1,20 @@
+[
+  {
+    "grade": "Before graduation",
+    "title": "Choosing a degree or course",
+    "text": "Find out what suits you before you commit to a degree, professional course or college.",
+    "action": "Career discovery →"
+  },
+  {
+    "grade": "Before post-graduation",
+    "title": "Planning your next qualification",
+    "text": "Pick the post-graduate course, specialisation and institution that fit your career goals.",
+    "action": "Education planning →"
+  },
+  {
+    "grade": "Graduates & job seekers",
+    "title": "Getting your first job",
+    "text": "Build the skills, confidence and interview performance employers look for.",
+    "action": "Job readiness →"
+  }
+]

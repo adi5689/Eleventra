@@ -1,0 +1,71 @@
+{
+  "contract": "implementation-checklist.md: Recreate all five Eleventra reference pages in React/Vite/Tailwind, retaining typography, original content/assets, section order, reference breakpoints and interactions.",
+  "targetViewports": [
+    "1440x900",
+    "1280x800",
+    "768x1024",
+    "390x844",
+    "360x800"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Axe WCAG A/AA reported zero violations on all five routes. Field labels/errors, first-invalid and detail-heading focus, mobile Escape restoration, Tab and gold input ring verified. Full screen-reader audit not performed; incomplete axe checks documented."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "All five routes at all five requested sizes have no horizontal document overflow and one h1. Homepage screenshots visually reviewed for desktop, laptop, tablet and both mobile sizes; route and navigation stack as intended."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Observed lazy-route Loading status while navigation modules load."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Unmatched career query displayed No careers found and Clear filters restored results."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Submitting blank contact form exposed four linked errors and focused student name; corrections cleared errors."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Testimonial, contact and policy placeholders explicitly retained and labeled from the source."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Valid dummy form submission reset values, focused preview confirmation and explicitly stated enquiries are not sent."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "The reference and recreation have no authentication, permission-dependent workflow, or privileged browser capability."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "1440x900",
+      "artifact": "local-1440x900.jpg",
+      "observation": "Rendered homepage reviewed: typography, gutters, hero wrapping and route layout fit the viewport; no horizontal overflow. Desktop/mobile compared with reference captures excluding the Claude toolbar."
+    },
+    {
+      "viewport": "1280x800",
+      "artifact": "local-1280x800.jpg",
+      "observation": "Rendered homepage reviewed: typography, gutters, hero wrapping and route layout fit the viewport; no horizontal overflow. Desktop/mobile compared with reference captures excluding the Claude toolbar."
+    },
+    {
+      "viewport": "768x1024",
+      "artifact": "local-768x1024.jpg",
+      "observation": "Rendered homepage reviewed: typography, gutters, hero wrapping and route layout fit the viewport; no horizontal overflow. Desktop/mobile compared with reference captures excluding the Claude toolbar."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "local-390x844.jpg",
+      "observation": "Rendered homepage reviewed: typography, gutters, hero wrapping and route layout fit the viewport; no horizontal overflow. Desktop/mobile compared with reference captures excluding the Claude toolbar."
+    },
+    {
+      "viewport": "360x800",
+      "artifact": "local-360x800.jpg",
+      "observation": "Rendered homepage reviewed: typography, gutters, hero wrapping and route layout fit the viewport; no horizontal overflow. Desktop/mobile compared with reference captures excluding the Claude toolbar."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "text": "A quote from a student about what the assessment showed them and the career they chose.",
+    "name": "Student name",
+    "detail": "Course, college"
+  },
+  {
+    "text": "A quote from a parent about how career architecting helped the family agree on a plan.",
+    "name": "Parent name",
+    "detail": "Parent of a student"
+  },
+  {
+    "text": "A quote from a graduate about interview preparation and landing their first job.",
+    "name": "Graduate name",
+    "detail": "Role, company"
+  }
+]

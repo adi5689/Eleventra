@@ -1,0 +1,98 @@
+[
+  {
+    "id": "profile-evaluation",
+    "category": "Entry point",
+    "title": "Profile Evaluation",
+    "description": "Many people realise too late that they chose the wrong subjects or career. A profile evaluation starts that conversation early. We learn your interests, strengths, weaknesses, talents, ambitions and preferences, then sketch a career roadmap.",
+    "items": [
+      "One-time registration",
+      "Career guidance call",
+      "Subject-selection guidance",
+      "Course and career guidance",
+      "Mailers on subjects, courses and careers"
+    ],
+    "note": "",
+    "href": "/contact?service=profile-evaluation",
+    "action": "Book a profile evaluation"
+  },
+  {
+    "id": "online-tests",
+    "category": "Test only",
+    "title": "Online Psychometric Testing",
+    "description": "Take a career test online and get a report. Choose the test that matches the decision in front of you.",
+    "items": [
+      "Subject Selector: which subjects suit you",
+      "Stream Selector: Science, Commerce or Humanities",
+      "Ideal Career: possible career directions",
+      "Branch Selector: which specialisation or branch to pick"
+    ],
+    "note": "Career architecting isn't included. You can add sessions after you've seen the report.",
+    "href": "/contact?service=online-tests",
+    "action": "Ask about a test"
+  },
+  {
+    "id": "psychometric",
+    "category": "Assessment + career architecting",
+    "title": "Psychometric Assessment & Career Architecting",
+    "description": "You take aptitude, interest and personality tests. A career architect then explains the report and turns it into decisions in two sessions.",
+    "items": [
+      "Psychometric testing: personality, aptitude, interest",
+      "Detailed report",
+      "Two career architecting sessions, about an hour each",
+      "Board and stream guidance for IB, IGCSE, CBSE and ICSE",
+      "Course and college guidance, India and international"
+    ],
+    "note": "",
+    "href": "/contact?service=psychometric",
+    "action": "Enquire about this package"
+  },
+  {
+    "id": "counselling",
+    "category": "Career architecting only",
+    "title": "Career Architecting Package",
+    "description": "For students who want a career architect's guidance but don't need testing, often because they already have a direction in mind.",
+    "items": [
+      "One-time registration",
+      "Two career architecting sessions, about an hour each",
+      "Subject, stream and course selection",
+      "College selection and career guidance",
+      "Course and career mailers"
+    ],
+    "note": "No psychometric tests. Choose the assessment package if you want them.",
+    "href": "/contact?service=counselling",
+    "action": "Enquire about this package"
+  },
+  {
+    "id": "university",
+    "category": "Undergraduates, year 2–3",
+    "title": "University Admission Package",
+    "description": "For students deciding what comes after their bachelor's, and applying for a master's in India or abroad.",
+    "items": [
+      "Career options after your degree",
+      "Emerging courses and master's programmes",
+      "PG college guidance, India and abroad",
+      "Portfolio, SOP, resume and essay editing",
+      "Extracurricular and internship guidance",
+      "3–4 career architecting sessions a year"
+    ],
+    "note": "",
+    "href": "/contact?service=university",
+    "action": "Enquire"
+  },
+  {
+    "id": "workshops",
+    "category": "Schools & colleges · online or on campus",
+    "title": "Career Architecting Workshops",
+    "description": "Workshops on the career questions your students and parents are asking, tailored to the age group and the decisions ahead.",
+    "items": [
+      "School, college and parent workshops",
+      "Career awareness and career discovery",
+      "Subject selection and study abroad",
+      "Entrance examinations",
+      "Faculty orientation"
+    ],
+    "note": "",
+    "href": "/contact?service=workshops",
+    "action": "Plan a workshop"
+  }
+]

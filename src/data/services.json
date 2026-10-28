@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/assets/photo-thoughtful-desk.jpg",
+    "alt": "A young woman at her desk, thinking about her options",
+    "title": "Career Discovery & Assessment",
+    "text": "Psychometric, aptitude and skill assessments that show your strengths, areas for development and potential career directions."
+  },
+  {
+    "image": "/assets/photo-tablet-review.jpg",
+    "alt": "A mentor walking a student through course options on a tablet",
+    "title": "Career & Education Planning",
+    "text": "Connect your strengths with the right career, then choose the degree, course, specialisation and institution that lead there."
+  },
+  {
+    "image": "/assets/photo-mentor-walkthrough.jpg",
+    "alt": "A senior mentor reviewing a document with a young professional",
+    "title": "Employability & Job Readiness",
+    "text": "Interview practice, communication and technical skills, and support through the placement process."
+  }
+]

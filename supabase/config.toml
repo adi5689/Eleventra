@@ -1,0 +1,5 @@
+project_id = "ytqazkdjrnsjpuneotkf"
+
+[functions.enquiries]
+# Public submissions have no user JWT. Staff actions verify it in the handler.
+verify_jwt = false
