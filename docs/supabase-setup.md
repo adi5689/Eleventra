@@ -61,3 +61,11 @@ Use Vite, Node 24, build command `npm run build`, and output directory `dist`. A
 Add the exact Vercel/custom domain origin to `APP_ORIGINS` and update Auth > URL Configuration. Redeploy the function after changing its secrets to load the updated origins. Preview origins must be added explicitly if they need enquiry access. The CSP in `vercel.json` permits this Supabase project and Google Fonts; update it if changing projects.
 
 Private local backup files are not application dependencies and are excluded from Git and Vite file serving.
+
+## Home contact widget
+
+The home page's Contact tab submits name, email, phone and interest area to the same enquiries function and database used by the full contact form. The staff dashboard lists these enquiries with the selected service; current level is shown as “Not provided”. No database migration is required.
+
+Deploy the updated `enquiries` function before using the widget: its schema now permits an omitted current level. Existing full contact form submissions remain supported. The widget reports success only after the function confirms storage; failed submissions retain the entered details for retry.
+
+The “Home widget” dashboard tab filters on `data.source = "home-widget"`. Deploy the current `validation.ts`, including `source: z.enum(["contact-form", "home-widget"]).default("contact-form")`, as well as the optional stage change. Existing records remain visible in All enquiries.

@@ -35,6 +35,7 @@ const text = (max: number) => z.string().trim().max(max);
 export const enquirySchema = z
   .object({
     id: z.uuid(),
+    source: z.enum(["contact-form", "home-widget"]).default("contact-form"),
     student: text(120).min(2),
     parent: text(120).default(""),
     phone: text(25)
@@ -49,7 +50,7 @@ export const enquirySchema = z
       .max(254)
       .transform((value) => value.toLowerCase()),
     city: text(120).default(""),
-    stage: z.enum(stages),
+    stage: z.union([z.enum(stages), z.literal("")]).default(""),
     service: z.enum(services).default(""),
     help: z.array(z.enum(interests)).max(8).default([]),
     message: text(4000).default(""),

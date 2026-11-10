@@ -5,9 +5,11 @@ import services from "../data/services.json";
 import { StageCard } from "../components/ContentCards";
 import stages from "../data/stages.json";
 import { Link } from "react-router-dom";
+import ContactWidget from "../components/ContactWidget";
 export default function Home() {
   return (
     <>
+      <ContactWidget />
       <section className="pt-[clamp(40px,6vw,80px)] pb-[clamp(40px,5vw,64px)]">
         <div className="w-full max-w-[1200px] mx-auto px-[clamp(16px,4vw,40px)]">
           <div className="grid min-[821px]:grid-cols-[1.25fr_.9fr] gap-[clamp(24px,5vw,72px)] items-end">

@@ -91,8 +91,10 @@ export function createSupabaseApi(client) {
       Math.min(100000, Number.parseInt(url.searchParams.get("page"), 10) || 1),
     );
     const status = url.searchParams.get("status");
+    const widgetOnly = url.searchParams.get("source") === "home-widget";
     const search = (url.searchParams.get("search") || "").trim().slice(0, 200);
     let query = client.from("enquiries").select("*", { count: "exact" });
+    if (widgetOnly) query = query.eq("data->>source", "home-widget");
     if (["new", "contacted", "closed"].includes(status))
       query = query.eq("status", status);
     if (search) {
@@ -115,6 +117,7 @@ export function createSupabaseApi(client) {
       let q = client
         .from("enquiries")
         .select("id", { count: "exact", head: true });
+      if (widgetOnly) q = q.eq("data->>source", "home-widget");
       if (column) q = value === null ? q.is(column, null) : q.eq(column, value);
       return options.signal ? q.abortSignal(options.signal) : q;
     };

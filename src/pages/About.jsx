@@ -149,22 +149,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-[clamp(72px,10vw,128px)] bg-paper" id="nep-2020">
-        <div className="w-full max-w-[1200px] mx-auto px-[clamp(16px,4vw,40px)]">
-          <div className="grid gap-[18px] mb-[clamp(36px,5vw,60px)] max-w-[760px] [&>p:not(.eyebrow)]:text-ink-soft [&>p:not(.eyebrow)]:text-[1.08rem] reveal">
-            <p className="eyebrow navy">Policy context</p>
-            <h2>NEP 2020 and Our Services</h2>
-          </div>
-          <div className="grid gap-3.5 justify-items-start p-[clamp(24px,4vw,40px)] border-2 border-dashed border-rule rounded-[14px] bg-mist [&_p]:text-ink-soft [&_p]:max-w-[60ch] reveal">
-            <span className="placeholder">Content to be provided</span>
-            <p>
-              This section will explain how India's National Education Policy
-              2020 connects to what we do. Details coming soon.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-[clamp(56px,7vw,88px)]">
         <div className="w-full max-w-[1200px] mx-auto px-[clamp(16px,4vw,40px)]">
           <div className="bg-navy text-paper rounded-[28px] p-[clamp(36px,6vw,72px)] grid min-[821px]:grid-cols-[1.3fr_auto] gap-8 items-center relative overflow-hidden [&_h2]:text-paper [&_h2]:text-[clamp(1.8rem,3.6vw,2.7rem)] [&_p]:text-on-night-soft [&_p]:mt-3.5 [&_p]:max-w-[46ch] [&_.hero-actions]:relative [&_.hero-actions]:z-1 cta-band reveal">

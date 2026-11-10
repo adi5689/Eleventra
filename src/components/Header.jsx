@@ -3,14 +3,15 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 const links = [
   ["/", "Home"],
   ["/about", "About"],
-  ["/services", "Services"],
+  ["/nep-2020", "NEP2020"],
   ["/careers", "Career Options"],
+  ["/services", "Services"],
   ["/contact", "Contact"],
 ];
 export default function Header() {
   const [open, setOpen] = useState(false);
   const toggle = useRef(null);
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
     function escape(event) {
       if (event.key === "Escape" && open) {
@@ -62,7 +63,7 @@ export default function Header() {
               className="relative whitespace-nowrap font-display font-bold text-[1.1rem] min-[1041px]:text-[.98rem] no-underline px-2 py-3.5 min-[1041px]:px-3.5 min-[1041px]:py-2.5 rounded-lg min-[1041px]:rounded-full hover:bg-mist"
             >
               {label}
-              {pathname === to && (
+              {`${pathname}${hash}` === to && (
                 <span
                   aria-hidden="true"
                   className="absolute size-2 rounded-full bg-paper border-[2.5px] border-gold right-3 top-1/2 -translate-y-1/2 min-[1041px]:right-auto min-[1041px]:left-1/2 min-[1041px]:-translate-x-1/2 min-[1041px]:top-auto min-[1041px]:bottom-[3px] min-[1041px]:translate-y-0"

@@ -38,6 +38,9 @@ export default function Footer() {
                 <Link to="/about">About us</Link>
               </li>
               <li>
+                <Link to="/nep-2020">NEP2020</Link>
+              </li>
+              <li>
                 <Link to="/contact">Contact form</Link>
               </li>
             </ul>
@@ -46,12 +49,15 @@ export default function Footer() {
             <h4>Talk to us</h4>
             <ul>
               <li>
-                <a href="tel:+910000000000">+91 XXXXX XXXXX</a>{" "}
-                <span className="placeholder">placeholder</span>
+                <a href="tel:+918169055389">+91 81690 55389</a>
               </li>
               <li>
-                <a href="mailto:hello@eleventra.in">hello@eleventra.in</a>{" "}
-                <span className="placeholder">placeholder</span>
+                <a
+                  className="[overflow-wrap:anywhere]"
+                  href="mailto:enquiry@elevantrainternational.com"
+                >
+                  enquiry@elevantrainternational.com
+                </a>
               </li>
             </ul>
           </div>

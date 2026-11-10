@@ -73,6 +73,16 @@ Deno.test("Edge Function validates public input and protects staff actions", asy
       assert.equal(stored.get(payload.id)?.student, "Test student");
       await Promise.all(background);
     });
+    await t.step("home widget saves four fields without inventing a current level", async () => {
+      const quick = { id: "00000000-0000-4000-8000-000000000003", source: "home-widget", student: "Quick enquiry", email: "quick@example.com", phone: "+918169055389", service: "planning", website: "" };
+      assert.equal((await call({ action: "submit", payload: quick })).status, 201);
+      assert.equal(stored.get(quick.id)?.stage, "");
+      assert.equal(stored.get(quick.id)?.source, "home-widget");
+      assert.equal(stored.get(quick.id)?.service, "planning");
+      assert.deepEqual(stored.get(quick.id)?.help, []);
+      assert.equal((await call({ action: "submit", payload: { ...quick, service: "invalid" } })).status, 400);
+      await Promise.all(background);
+    });
     await t.step("rate limits stop writes and cron token cannot read state", async () => {
       allowRate = false;
       assert.equal((await call({ action: "submit", payload })).status, 429);

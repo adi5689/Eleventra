@@ -270,8 +270,12 @@ function EnquiryDetail({ item, onClose, onUpdated, onExpired }) {
           ["Phone / WhatsApp", item.phone],
           ["Parent", item.parent],
           ["City", item.city],
-          ["Current stage", item.stage],
-          ["Interested in", serviceNames[item.service] || "Not sure yet"],
+          ["Current level", item.stage || "Not provided"],
+          ["Interest area", serviceNames[item.service] || "Not sure yet"],
+          [
+            "Submitted from",
+            item.source === "home-widget" ? "Home widget" : "Contact form",
+          ],
           ["Help needed", item.help.join(", ")],
           [
             "Google Sheets",
@@ -330,6 +334,7 @@ function EnquiryDetail({ item, onClose, onUpdated, onExpired }) {
 }
 function Dashboard({ session, onLogout }) {
   const [data, setData] = useState(null);
+  const [source, setSource] = useState("");
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
   const [page, setPage] = useState(1);
@@ -345,7 +350,7 @@ function Dashboard({ session, onLogout }) {
       try {
         const result = await api(
           "/api/admin/enquiries?" +
-            new URLSearchParams({ search, status, page }),
+            new URLSearchParams({ search, status, page, source }),
           { signal },
         );
         setData(result);
@@ -357,7 +362,7 @@ function Dashboard({ session, onLogout }) {
         if (!signal?.aborted) setLoading(false);
       }
     },
-    [search, status, page, onLogout],
+    [search, status, page, source, onLogout],
   );
   useEffect(() => {
     const controller = new AbortController();
@@ -432,11 +437,28 @@ function Dashboard({ session, onLogout }) {
             Workspace
           </p>
           <button
-            onClick={() => setSelected(null)}
-            className="mt-4 flex min-h-12 items-center gap-3 rounded-xl bg-mist px-3 text-sm font-bold text-navy"
+            onClick={() => {
+              setSelected(null);
+              setSource("");
+              setPage(1);
+            }}
+            aria-pressed={source === ""}
+            className={`mt-4 flex min-h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold text-navy hover:bg-mist ${source === "" ? "bg-mist" : ""}`}
           >
             <Inbox size={18} />
-            Enquiries
+            All enquiries
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setSelected(null);
+              setSource("home-widget");
+              setPage(1);
+            }}
+            aria-pressed={source === "home-widget"}
+            className={`mt-2 flex min-h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold text-navy hover:bg-mist ${source === "home-widget" ? "bg-mist" : ""}`}
+          >
+            <Inbox size={18} /> Home widget
           </button>
           <div className="mt-auto rounded-xl border border-rule p-4">
             <ShieldCheck size={18} className="text-gold-text" />
@@ -453,7 +475,9 @@ function Dashboard({ session, onLogout }) {
                 Your career conversations
               </p>
               <h1 className="text-[clamp(2rem,3.5vw,2.75rem)] tracking-tight">
-                Enquiries
+                {source === "home-widget"
+                  ? "Home widget enquiries"
+                  : "All enquiries"}
               </h1>
               <p className="mt-3 text-sm text-ink-soft">
                 Keep every conversation moving towards a clear next step.
@@ -467,6 +491,30 @@ function Dashboard({ session, onLogout }) {
               <RefreshCw size={15} className={loading ? "animate-spin" : ""} />
               Refresh
             </button>
+          </div>
+          <div
+            role="group"
+            aria-label="Enquiry source"
+            className="mt-7 inline-flex flex-wrap gap-1 rounded-2xl border border-rule bg-paper p-1.5"
+          >
+            {[
+              ["", "All enquiries"],
+              ["home-widget", "Home widget"],
+            ].map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={source === value}
+                onClick={() => {
+                  setSource(value);
+                  setPage(1);
+                  setSelected(null);
+                }}
+                className={`rounded-xl px-5 py-2.5 text-sm font-bold transition-colors ${source === value ? "bg-navy text-paper" : "text-ink-soft hover:bg-mist"}`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
           <div className="mt-8 grid grid-cols-2 gap-3 min-[800px]:grid-cols-4">
             {[
@@ -639,7 +687,7 @@ function Dashboard({ session, onLogout }) {
                   <>
                     <div className="hidden grid-cols-[1.3fr_1fr_.85fr_.65fr_28px] gap-4 border-b border-rule bg-mist/50 px-5 py-3 text-[11px] font-bold uppercase tracking-wider text-ink-soft min-[800px]:grid">
                       <span>Student / candidate</span>
-                      <span>Service & stage</span>
+                      <span>Interest area & level</span>
                       <span>Received · IST</span>
                       <span>Status</span>
                       <span />
@@ -669,7 +717,7 @@ function Dashboard({ session, onLogout }) {
                                 {serviceNames[item.service] || "Not sure yet"}
                               </span>
                               <span className="mt-1 block text-xs text-ink-soft">
-                                {item.stage}
+                                {item.stage || "Not provided"}
                               </span>
                             </div>
                             <div className="text-xs leading-relaxed text-ink-soft">

@@ -135,3 +135,24 @@ test("Supabase status updates reject unsupported values before sending a write",
     (e) => e.status === 400,
   );
 });
+
+test("home widget tab filters database rows and all summary counts by source", async () => {
+  const queries = [];
+  const client = createClient("https://test.supabase.co", "test-key", {
+    auth: { persistSession: false },
+    global: { fetch: async (input, options) => {
+      const url = new URL(input);
+      if (url.pathname.includes("/functions/")) return Response.json({ configured: false });
+      queries.push(url);
+      return options.method === "HEAD"
+        ? new Response(null, { headers: { "Content-Range": "0-0/2" } })
+        : Response.json([], { headers: { "Content-Range": "*/0" } });
+    } },
+  });
+  client.auth.getUser = async () => ({ data: { user }, error: null });
+  await createSupabaseApi(client)("/api/admin/enquiries?source=home-widget&status=new&page=2");
+  assert.equal(queries.length, 5);
+  for (const url of queries) assert.equal(url.searchParams.get("data->>source"), "eq.home-widget");
+  assert.equal(queries[0].searchParams.get("status"), "eq.new");
+  assert.equal(queries[0].searchParams.get("offset"), "20");
+});

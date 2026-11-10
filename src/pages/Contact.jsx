@@ -179,7 +179,7 @@ export default function Contact() {
                 <legend>Where you are now</legend>
                 <div className="grid min-[561px]:grid-cols-2 gap-x-[18px] gap-y-4">
                   <div className="grid gap-1.5 field">
-                    <label htmlFor="stage">Current stage</label>
+                    <label htmlFor="stage">Current level</label>
                     <select
                       id="stage"
                       name="stage"
@@ -196,7 +196,7 @@ export default function Contact() {
                       <option>Working, considering a change</option>
                     </select>
                     <span id="stage-error" className="err" role="alert">
-                      Choose the current stage.
+                      Choose the current level.
                     </span>
                   </div>
                   <div className="grid gap-1.5 field">
@@ -404,29 +404,18 @@ export default function Contact() {
                 <div>
                   <dt>Phone &amp; WhatsApp</dt>
                   <dd>
-                    <a href="tel:+910000000000">+91 XXXXX XXXXX</a>{" "}
-                    <span className="placeholder">placeholder</span>
+                    <a href="tel:+918169055389">+91 81690 55389</a>
                   </dd>
                 </div>
                 <div>
                   <dt>Email</dt>
                   <dd>
-                    <a href="mailto:hello@eleventra.in">hello@eleventra.in</a>{" "}
-                    <span className="placeholder">placeholder</span>
-                  </dd>
-                </div>
-                <div>
-                  <dt>Hours</dt>
-                  <dd>
-                    Mon–Sat, 10am–7pm IST{" "}
-                    <span className="placeholder">confirm</span>
-                  </dd>
-                </div>
-                <div>
-                  <dt>Sessions</dt>
-                  <dd>
-                    Online, or in person{" "}
-                    <span className="placeholder">add city</span>
+                    <a
+                      className="[overflow-wrap:anywhere]"
+                      href="mailto:enquiry@elevantrainternational.com"
+                    >
+                      enquiry@elevantrainternational.com
+                    </a>
                   </dd>
                 </div>
               </dl>
