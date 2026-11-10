@@ -92,12 +92,21 @@ export function createSupabaseApi(client) {
     );
     const status = url.searchParams.get("status");
     const source = url.searchParams.get("source");
-    const filteredSource = ["home-widget", "career-assessment"].includes(source)
+    const filteredSource = [
+      "contact-form",
+      "home-widget",
+      "career-assessment",
+    ].includes(source)
       ? source
       : null;
     const search = (url.searchParams.get("search") || "").trim().slice(0, 200);
     let query = client.from("enquiries").select("*", { count: "exact" });
-    if (filteredSource) query = query.eq("data->>source", filteredSource);
+    const filterSource = (query) => {
+      if (filteredSource === "contact-form")
+        return query.or("data->>source.eq.contact-form,data->>source.is.null");
+      return filteredSource ? query.eq("data->>source", filteredSource) : query;
+    };
+    query = filterSource(query);
     if (["new", "contacted", "closed"].includes(status))
       query = query.eq("status", status);
     if (search) {
@@ -120,7 +129,7 @@ export function createSupabaseApi(client) {
       let q = client
         .from("enquiries")
         .select("id", { count: "exact", head: true });
-      if (filteredSource) q = q.eq("data->>source", filteredSource);
+      q = filterSource(q);
       if (column) q = value === null ? q.is(column, null) : q.eq(column, value);
       return options.signal ? q.abortSignal(options.signal) : q;
     };

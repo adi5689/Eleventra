@@ -15,7 +15,7 @@ For a new checkout, fill in the Supabase project URL and publishable key in `.en
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. Staff sign in at `/admin` with their Supabase email and password. Staff sessions are held in memory; reloading requires sign-in.
+Open http://127.0.0.1:5173. Staff sign in at `/admin` with their Supabase email and password. Staff sessions persist across refreshes and are refreshed automatically. Use Sign out to end the session on a shared device.
 
 ## Commands
 

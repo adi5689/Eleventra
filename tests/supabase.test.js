@@ -156,3 +156,23 @@ for (const source of ["home-widget", "career-assessment"]) test(`${source} tab f
   assert.equal(queries[0].searchParams.get("status"), "eq.new");
   assert.equal(queries[0].searchParams.get("offset"), "20");
 });
+
+test("contact enquiries include legacy records and apply source filtering to summary counts", async () => {
+  const queries = [];
+  const client = createClient("https://test.supabase.co", "test-key", {
+    auth: { persistSession: false },
+    global: { fetch: async (input, options) => {
+      const url = new URL(input);
+      if (url.pathname.includes("/functions/")) return Response.json({ configured: false });
+      queries.push(url);
+      return options.method === "HEAD"
+        ? new Response(null, { headers: { "Content-Range": "0-0/2" } })
+        : Response.json([], { headers: { "Content-Range": "*/0" } });
+    } },
+  });
+  client.auth.getUser = async () => ({ data: { user }, error: null });
+  await createSupabaseApi(client)("/api/admin/enquiries?source=contact-form&search=Alice");
+  assert.equal(queries.length, 5);
+  for (const url of queries) assert.ok(url.searchParams.getAll("or").includes("(data->>source.eq.contact-form,data->>source.is.null)"));
+  assert.equal(queries[0].searchParams.getAll("or").length, 2);
+});

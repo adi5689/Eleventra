@@ -7,7 +7,11 @@ if (!url || !publishableKey) {
   throw new Error("Set the Supabase URL and publishable key in .env.local.");
 }
 
-// Keep staff sessions in memory instead of browser storage. Reloading signs out.
+// Supabase restores and refreshes the session; staff access is verified server-side.
 export const supabase = createClient(url, publishableKey, {
-  auth: { persistSession: false, detectSessionInUrl: false },
+  auth: {
+    persistSession: true,
+    autoRefreshToken: true,
+    detectSessionInUrl: false,
+  },
 });

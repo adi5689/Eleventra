@@ -238,7 +238,7 @@ function EnquiryDetail({ item, onClose, onUpdated, onExpired }) {
             onClick={onClose}
           >
             <ArrowLeft size={16} />
-            All enquiries
+            Contact enquiries
           </button>
           <h2
             ref={heading}
@@ -277,7 +277,7 @@ function EnquiryDetail({ item, onClose, onUpdated, onExpired }) {
             item.source === "career-assessment"
               ? "Career assessment"
               : item.source === "home-widget"
-                ? "Home widget"
+                ? "Quick enquiries"
                 : "Contact form",
           ],
           ["Help needed", item.help.join(", ")],
@@ -336,9 +336,15 @@ function EnquiryDetail({ item, onClose, onUpdated, onExpired }) {
     </section>
   );
 }
+const enquirySections = [
+  ["contact-form", "Contact enquiries"],
+  ["home-widget", "Quick enquiries"],
+  ["career-assessment", "Career assessments"],
+];
+
 function Dashboard({ session, onLogout }) {
   const [data, setData] = useState(null);
-  const [source, setSource] = useState("");
+  const [source, setSource] = useState("contact-form");
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
   const [page, setPage] = useState(1);
@@ -440,30 +446,26 @@ function Dashboard({ session, onLogout }) {
           <p className="px-3 text-[10px] font-bold uppercase tracking-[.16em] text-ink-soft">
             Workspace
           </p>
-          <button
-            onClick={() => {
-              setSelected(null);
-              setSource("");
-              setPage(1);
-            }}
-            aria-pressed={source === ""}
-            className={`mt-4 flex min-h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold text-navy hover:bg-mist ${source === "" ? "bg-mist" : ""}`}
-          >
-            <Inbox size={18} />
-            All enquiries
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setSelected(null);
-              setSource("home-widget");
-              setPage(1);
-            }}
-            aria-pressed={source === "home-widget"}
-            className={`mt-2 flex min-h-12 items-center gap-3 rounded-xl px-3 text-sm font-bold text-navy hover:bg-mist ${source === "home-widget" ? "bg-mist" : ""}`}
-          >
-            <Inbox size={18} /> Home widget
-          </button>
+          <nav aria-label="Enquiry categories" className="mt-4 grid gap-2">
+            {enquirySections.map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                onClick={() => {
+                  setSource(value);
+                  setSelected(null);
+                  setSearch("");
+                  setStatus("");
+                  setPage(1);
+                }}
+                aria-pressed={source === value}
+                className={`flex min-h-12 items-center gap-3 rounded-xl px-3 text-left text-sm font-bold transition-colors ${source === value ? "bg-navy text-paper" : "text-ink-soft hover:bg-mist"}`}
+              >
+                <Inbox size={18} className="shrink-0" />
+                {label}
+              </button>
+            ))}
+          </nav>
           <div className="mt-auto rounded-xl border border-rule p-4">
             <ShieldCheck size={18} className="text-gold-text" />
             <p className="mt-3 text-xs font-bold">Signed in as</p>
@@ -479,11 +481,7 @@ function Dashboard({ session, onLogout }) {
                 Your career conversations
               </p>
               <h1 className="text-[clamp(2rem,3.5vw,2.75rem)] tracking-tight">
-                {source === "home-widget"
-                  ? "Home widget enquiries"
-                  : source === "career-assessment"
-                    ? "Career assessment bookings"
-                    : "All enquiries"}
+                {enquirySections.find(([value]) => value === source)?.[1]}
               </h1>
               <p className="mt-3 text-sm text-ink-soft">
                 Keep every conversation moving towards a clear next step.
@@ -501,19 +499,17 @@ function Dashboard({ session, onLogout }) {
           <div
             role="group"
             aria-label="Enquiry source"
-            className="mt-7 inline-flex flex-wrap gap-1 rounded-2xl border border-rule bg-paper p-1.5"
+            className="mt-7 inline-flex flex-wrap gap-1 rounded-2xl border border-rule bg-paper p-1.5 min-[1100px]:hidden"
           >
-            {[
-              ["", "All enquiries"],
-              ["home-widget", "Home widget"],
-              ["career-assessment", "Career assessments"],
-            ].map(([value, label]) => (
+            {enquirySections.map(([value, label]) => (
               <button
                 key={value}
                 type="button"
                 aria-pressed={source === value}
                 onClick={() => {
                   setSource(value);
+                  setSearch("");
+                  setStatus("");
                   setPage(1);
                   setSelected(null);
                 }}
