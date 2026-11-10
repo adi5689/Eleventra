@@ -274,7 +274,11 @@ function EnquiryDetail({ item, onClose, onUpdated, onExpired }) {
           ["Interest area", serviceNames[item.service] || "Not sure yet"],
           [
             "Submitted from",
-            item.source === "home-widget" ? "Home widget" : "Contact form",
+            item.source === "career-assessment"
+              ? "Career assessment"
+              : item.source === "home-widget"
+                ? "Home widget"
+                : "Contact form",
           ],
           ["Help needed", item.help.join(", ")],
           [
@@ -477,7 +481,9 @@ function Dashboard({ session, onLogout }) {
               <h1 className="text-[clamp(2rem,3.5vw,2.75rem)] tracking-tight">
                 {source === "home-widget"
                   ? "Home widget enquiries"
-                  : "All enquiries"}
+                  : source === "career-assessment"
+                    ? "Career assessment bookings"
+                    : "All enquiries"}
               </h1>
               <p className="mt-3 text-sm text-ink-soft">
                 Keep every conversation moving towards a clear next step.
@@ -500,6 +506,7 @@ function Dashboard({ session, onLogout }) {
             {[
               ["", "All enquiries"],
               ["home-widget", "Home widget"],
+              ["career-assessment", "Career assessments"],
             ].map(([value, label]) => (
               <button
                 key={value}
@@ -717,6 +724,9 @@ function Dashboard({ session, onLogout }) {
                                 {serviceNames[item.service] || "Not sure yet"}
                               </span>
                               <span className="mt-1 block text-xs text-ink-soft">
+                                {item.source === "career-assessment"
+                                  ? "Career assessment · "
+                                  : ""}
                                 {item.stage || "Not provided"}
                               </span>
                             </div>

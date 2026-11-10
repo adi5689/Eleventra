@@ -136,7 +136,7 @@ test("Supabase status updates reject unsupported values before sending a write",
   );
 });
 
-test("home widget tab filters database rows and all summary counts by source", async () => {
+for (const source of ["home-widget", "career-assessment"]) test(`${source} tab filters database rows and all summary counts by source`, async () => {
   const queries = [];
   const client = createClient("https://test.supabase.co", "test-key", {
     auth: { persistSession: false },
@@ -150,9 +150,9 @@ test("home widget tab filters database rows and all summary counts by source", a
     } },
   });
   client.auth.getUser = async () => ({ data: { user }, error: null });
-  await createSupabaseApi(client)("/api/admin/enquiries?source=home-widget&status=new&page=2");
+  await createSupabaseApi(client)(`/api/admin/enquiries?source=${source}&status=new&page=2`);
   assert.equal(queries.length, 5);
-  for (const url of queries) assert.equal(url.searchParams.get("data->>source"), "eq.home-widget");
+  for (const url of queries) assert.equal(url.searchParams.get("data->>source"), `eq.${source}`);
   assert.equal(queries[0].searchParams.get("status"), "eq.new");
   assert.equal(queries[0].searchParams.get("offset"), "20");
 });

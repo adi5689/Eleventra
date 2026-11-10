@@ -83,6 +83,13 @@ Deno.test("Edge Function validates public input and protects staff actions", asy
       assert.equal((await call({ action: "submit", payload: { ...quick, service: "invalid" } })).status, 400);
       await Promise.all(background);
     });
+    await t.step("career assessment bookings retain their source and career context", async () => {
+      const booking = { ...payload, id: "00000000-0000-4000-8000-000000000004", source: "career-assessment", service: "discovery", message: "Career of interest: Engineering" };
+      assert.equal((await call({ action: "submit", payload: booking })).status, 201);
+      assert.equal(stored.get(booking.id)?.source, "career-assessment");
+      assert.equal(stored.get(booking.id)?.message, booking.message);
+      await Promise.all(background);
+    });
     await t.step("rate limits stop writes and cron token cannot read state", async () => {
       allowRate = false;
       assert.equal((await call({ action: "submit", payload })).status, 429);

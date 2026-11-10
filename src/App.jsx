@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 const Admin = lazy(() => import("./pages/Admin"));
+const AssessmentBooking = lazy(() => import("./pages/AssessmentBooking"));
 const NEP2020 = lazy(() => import("./pages/NEP2020"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
@@ -11,6 +12,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Careers = lazy(() => import("./pages/Careers"));
 const titles = {
   "/": "Eleventra Career Architects — Career architecting in India",
+  "/book-assessment": "Book a career assessment | Eleventra",
   "/nep-2020": "NEP 2020 — Eleventra Career Architects",
   "/about": "About Eleventra — Career Architects",
   "/services": "Services — Discovery, planning & job readiness | Eleventra",
@@ -91,6 +93,7 @@ export default function App() {
             <Route path="/admin/*" element={<Admin />} />
             <Route path="/" element={<Home />} />
             <Route path="/home.html" element={<Home />} />
+            <Route path="/book-assessment" element={<AssessmentBooking />} />
             <Route path="/nep-2020" element={<NEP2020 />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />

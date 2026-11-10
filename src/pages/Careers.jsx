@@ -183,7 +183,10 @@ function Detail({ career }) {
           <p className="font-display font-extrabold text-[clamp(1.1rem,1.8vw,1.3rem)] text-navy">
             Wondering if {career.name} suits you?
           </p>
-          <Link className="btn btn-primary" to="/contact?service=discovery">
+          <Link
+            className="btn btn-primary"
+            to={`/book-assessment?career=${encodeURIComponent(career.name)}`}
+          >
             Book a career assessment <ArrowRight size={18} aria-hidden="true" />
           </Link>
         </div>
@@ -338,10 +341,7 @@ export default function Careers() {
                 can shortlist careers with confidence.
               </p>
             </div>
-            <Link
-              className="btn btn-gold relative z-1"
-              to="/contact?service=discovery"
-            >
+            <Link className="btn btn-gold relative z-1" to="/book-assessment">
               Book a career assessment{" "}
               <ArrowRight size={18} aria-hidden="true" />
             </Link>

@@ -35,7 +35,7 @@ const text = (max: number) => z.string().trim().max(max);
 export const enquirySchema = z
   .object({
     id: z.uuid(),
-    source: z.enum(["contact-form", "home-widget"]).default("contact-form"),
+    source: z.enum(["contact-form", "home-widget", "career-assessment"]).default("contact-form"),
     student: text(120).min(2),
     parent: text(120).default(""),
     phone: text(25)
