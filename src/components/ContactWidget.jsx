@@ -1,5 +1,11 @@
-import { useRef, useState } from "react";
-import { MessageCircle, X, CheckCircle2, LoaderCircle } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import {
+  MessageCircle,
+  X,
+  CheckCircle2,
+  LoaderCircle,
+  ChevronDown,
+} from "lucide-react";
 import { api } from "../lib/api";
 
 const interests = [
@@ -10,17 +16,76 @@ const interests = [
   ["workshops", "Career Workshops"],
 ];
 
+const controlClass =
+  "w-full min-w-0 h-11 rounded-xl border border-input-border bg-mist/35 px-3.5 font-display text-base leading-normal text-ink placeholder:text-ink-soft/65 transition-[border-color,background-color,box-shadow] duration-150 hover:border-navy/45 focus:border-navy focus:bg-paper focus:outline-none focus:ring-3 focus:ring-gold/25 disabled:opacity-60";
+
+function WidgetField({ id, label, children, ...props }) {
+  return (
+    <div className="grid min-w-0 gap-1.5">
+      <label
+        htmlFor={id}
+        className="font-display text-[13px] leading-5 font-semibold text-ink-soft"
+      >
+        {label}
+      </label>
+      {children ? (
+        <div className="relative">
+          <select
+            id={id}
+            className={`${controlClass} appearance-none pr-9`}
+            {...props}
+          >
+            {children}
+          </select>
+          <ChevronDown
+            size={16}
+            aria-hidden="true"
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-ink-soft"
+          />
+        </div>
+      ) : (
+        <input id={id} className={controlClass} {...props} />
+      )}
+    </div>
+  );
+}
+
 export default function ContactWidget() {
-  const dialog = useRef(null);
+  const widget = useRef(null);
+  const [open, setOpen] = useState(false);
   const trigger = useRef(null);
   const requestId = useRef(null);
   const [pending, setPending] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
   function close() {
-    dialog.current?.close();
+    setOpen(false);
     trigger.current?.focus();
   }
+  useEffect(() => {
+    if (!open) return;
+    const frame = requestAnimationFrame(() =>
+      widget.current?.querySelector("input")?.focus({ preventScroll: true }),
+    );
+    function dismiss(event) {
+      if (event.type === "keydown" && event.key === "Escape") {
+        setOpen(false);
+        trigger.current?.focus();
+      } else if (
+        event.type === "pointerdown" &&
+        !widget.current?.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("keydown", dismiss);
+    document.addEventListener("pointerdown", dismiss);
+    return () => {
+      cancelAnimationFrame(frame);
+      document.removeEventListener("keydown", dismiss);
+      document.removeEventListener("pointerdown", dismiss);
+    };
+  }, [open]);
   async function submit(event) {
     event.preventDefault();
     if (pending) return;
@@ -50,32 +115,46 @@ export default function ContactWidget() {
     }
   }
   return (
-    <>
+    <div
+      ref={widget}
+      className={`fixed right-0 top-1/2 -translate-y-1/2 z-50 w-[min(360px,calc(100vw-60px))] transition-transform duration-300 ease-out motion-reduce:transition-none ${open ? "translate-x-0" : "translate-x-full"}`}
+    >
       <button
         ref={trigger}
         type="button"
-        onClick={() => dialog.current?.showModal()}
+        onClick={() => {
+          if (open) close();
+          else setOpen(true);
+        }}
+        aria-expanded={open}
+        aria-controls="quick-contact-panel"
         aria-haspopup="dialog"
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-navy text-paper rounded-l-2xl border border-rule shadow-lg px-3 py-5 flex flex-col items-center gap-3 hover:bg-night transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+        className="absolute right-full top-1/2 -translate-y-1/2 bg-navy text-paper rounded-l-2xl border border-r-0 border-rule shadow-lg w-12 py-5 flex flex-col items-center gap-3 hover:bg-night transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
       >
         <MessageCircle size={20} aria-hidden="true" />
         <span className="font-display font-bold [writing-mode:vertical-rl]">
           Contact
         </span>
       </button>
-      <dialog
-        ref={dialog}
+      <section
+        id="quick-contact-panel"
+        role="dialog"
+        aria-modal="false"
         aria-labelledby="quick-contact-title"
-        onClick={(event) => {
-          if (event.target === dialog.current) close();
-        }}
-        className="m-auto w-[calc(100%-32px)] max-w-[440px] max-h-[90dvh] overflow-y-auto rounded-[24px] border border-rule bg-paper text-ink p-0 shadow-2xl backdrop:bg-night/60 backdrop:backdrop-blur-sm"
+        aria-hidden={!open}
+        inert={!open}
+        className="max-h-[calc(100dvh-112px)] overflow-y-auto rounded-l-[22px] border border-r-0 border-rule bg-paper text-ink shadow-2xl"
       >
-        <div className="p-[clamp(24px,5vw,36px)]">
-          <div className="flex items-start justify-between gap-4 mb-6">
+        <div className="p-5 sm:p-6">
+          <div className="flex items-start justify-between gap-3 mb-3">
             <div>
-              <p className="eyebrow navy">Let's talk</p>
-              <h2 id="quick-contact-title" className="text-[1.8rem]">
+              <p className="font-display text-xs font-semibold text-gold-text mb-1">
+                Let's talk
+              </p>
+              <h2
+                id="quick-contact-title"
+                className="text-[1.5rem] leading-tight"
+              >
                 Contact us
               </h2>
             </div>
@@ -83,7 +162,7 @@ export default function ContactWidget() {
               type="button"
               onClick={close}
               aria-label="Close contact form"
-              className="rounded-full p-2 hover:bg-mist focus-visible:outline-2 focus-visible:outline-gold"
+              className="flex size-10 shrink-0 items-center justify-center -mr-2 -mt-1 rounded-full text-ink-soft hover:bg-mist focus-visible:outline-2 focus-visible:outline-gold"
             >
               <X size={20} />
             </button>
@@ -106,8 +185,8 @@ export default function ContactWidget() {
             </div>
           ) : (
             <>
-              <p className="text-ink-soft mb-6">
-                Share your details and our team will get in touch.
+              <p className="font-display text-sm leading-relaxed text-ink-soft mb-4">
+                Leave your details. We’ll be in touch.
               </p>
               <form
                 onSubmit={submit}
@@ -119,63 +198,57 @@ export default function ContactWidget() {
               >
                 <fieldset
                   disabled={pending}
-                  className="grid gap-4 border-0 p-0 m-0"
+                  className="grid gap-3 border-0 p-0 m-0"
                 >
-                  <div className="grid gap-1.5">
-                    <label htmlFor="quick-name">Name</label>
-                    <input
-                      autoFocus
-                      id="quick-name"
-                      name="student"
-                      autoComplete="name"
-                      minLength={2}
-                      maxLength={120}
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-1.5">
-                    <label htmlFor="quick-email">Email</label>
-                    <input
-                      id="quick-email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      maxLength={254}
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-1.5">
-                    <label htmlFor="quick-phone">Phone</label>
-                    <input
-                      id="quick-phone"
-                      name="phone"
-                      type="tel"
-                      autoComplete="tel"
-                      minLength={10}
-                      maxLength={25}
-                      pattern="[+]?[0-9 ]{10,18}"
-                      title="Enter a phone number with 10 to 15 digits, optionally including a country code."
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-1.5">
-                    <label htmlFor="quick-interest">Interest area</label>
-                    <select
-                      id="quick-interest"
-                      name="service"
-                      required
-                      defaultValue=""
-                    >
-                      <option value="" disabled>
-                        Choose your interest area
+                  <WidgetField
+                    id="quick-name"
+                    label="Name"
+                    name="student"
+                    autoComplete="name"
+                    placeholder="Your full name"
+                    minLength={2}
+                    maxLength={120}
+                    required
+                  />
+                  <WidgetField
+                    id="quick-email"
+                    label="Email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    placeholder="you@example.com"
+                    maxLength={254}
+                    required
+                  />
+                  <WidgetField
+                    id="quick-phone"
+                    label="Phone"
+                    name="phone"
+                    type="tel"
+                    autoComplete="tel"
+                    placeholder="Your phone number"
+                    minLength={10}
+                    maxLength={25}
+                    pattern="[+]?[0-9 ]{10,18}"
+                    title="Enter a phone number with 10 to 15 digits, optionally including a country code."
+                    required
+                  />
+                  <WidgetField
+                    id="quick-interest"
+                    label="Interest area"
+                    name="service"
+                    required
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select an interest
+                    </option>
+                    {interests.map(([value, label]) => (
+                      <option key={value} value={value}>
+                        {label}
                       </option>
-                      {interests.map(([value, label]) => (
-                        <option key={value} value={value}>
-                          {label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
+                    ))}
+                  </WidgetField>
                   <div hidden aria-hidden="true">
                     <label htmlFor="quick-website">Leave this empty</label>
                     <input
@@ -185,7 +258,7 @@ export default function ContactWidget() {
                       autoComplete="off"
                     />
                   </div>
-                  <p className="text-xs text-ink-soft">
+                  <p className="font-display text-[11px] leading-relaxed text-ink-soft">
                     By submitting, you agree to be contacted about your enquiry.
                   </p>
                   {error && (
@@ -195,7 +268,7 @@ export default function ContactWidget() {
                   )}
                   <button
                     type="submit"
-                    className="btn btn-primary justify-center w-full disabled:opacity-60"
+                    className="flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-navy px-4 py-2.5 font-display text-sm font-bold text-paper transition-colors hover:bg-night focus-visible:outline-gold disabled:opacity-60"
                   >
                     {pending ? (
                       <>
@@ -211,7 +284,7 @@ export default function ContactWidget() {
             </>
           )}
         </div>
-      </dialog>
-    </>
+      </section>
+    </div>
   );
 }
